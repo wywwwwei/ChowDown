@@ -1,0 +1,17 @@
+//
+//  ChowDown-prefix.pch
+//  ChowDown
+//
+//  Created by Wu Yongwei on 2024/5/15.
+//
+
+#ifndef ChowDown_prefix_pch
+#define ChowDown_prefix_pch
+
+#import <Foundation/Foundation.h>
+
+#import "UIView+Helper.h"
+#import "CDCommonMacro.h"
+#import "CDCommonUtils.h"
+
+#endif /* ChowDown_prefix_pch */

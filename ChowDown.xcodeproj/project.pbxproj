@@ -1,0 +1,779 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		47B56CFCD45A16F1EAA34406 /* Pods_ChowDown_ChowDownUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2D9861E0F2D883679203BC /* Pods_ChowDown_ChowDownUITests.framework */; };
+		8552127C2BF3CA0A003557AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8552127B2BF3CA0A003557AF /* AppDelegate.m */; };
+		8552127F2BF3CA0A003557AF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8552127E2BF3CA0A003557AF /* SceneDelegate.m */; };
+		855212822BF3CA0A003557AF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 855212812BF3CA0A003557AF /* ViewController.m */; };
+		855212872BF3CA0B003557AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 855212862BF3CA0B003557AF /* Assets.xcassets */; };
+		8552128A2BF3CA0B003557AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 855212882BF3CA0B003557AF /* LaunchScreen.storyboard */; };
+		8552128D2BF3CA0B003557AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8552128C2BF3CA0B003557AF /* main.m */; };
+		855212972BF3CA0B003557AF /* ChowDownTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 855212962BF3CA0B003557AF /* ChowDownTests.m */; };
+		855212A12BF3CA0B003557AF /* ChowDownUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 855212A02BF3CA0B003557AF /* ChowDownUITests.m */; };
+		855212A32BF3CA0B003557AF /* ChowDownUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 855212A22BF3CA0B003557AF /* ChowDownUITestsLaunchTests.m */; };
+		855212B52BF3CB80003557AF /* CDCommonUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 855212B42BF3CB80003557AF /* CDCommonUtils.m */; };
+		855212B82BF3CBCF003557AF /* UIView+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 855212B72BF3CBCF003557AF /* UIView+Helper.m */; };
+		E711FAEF22B34C6F037C8FDF /* Pods_ChowDownTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1615DF34F92EF7B6F2ED23C1 /* Pods_ChowDownTests.framework */; };
+		F67B08B83A1A83D9BCA91EC5 /* Pods_ChowDown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C2DA6403AF9C361C9DC8F4 /* Pods_ChowDown.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		855212932BF3CA0B003557AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8552126F2BF3CA0A003557AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 855212762BF3CA0A003557AF;
+			remoteInfo = ChowDown;
+		};
+		8552129D2BF3CA0B003557AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8552126F2BF3CA0A003557AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 855212762BF3CA0A003557AF;
+			remoteInfo = ChowDown;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03C2DA6403AF9C361C9DC8F4 /* Pods_ChowDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChowDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C2D9861E0F2D883679203BC /* Pods_ChowDown_ChowDownUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChowDown_ChowDownUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1615DF34F92EF7B6F2ED23C1 /* Pods_ChowDownTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChowDownTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CD260FC390B077A011CACC5 /* Pods-ChowDown.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChowDown.release.xcconfig"; path = "Target Support Files/Pods-ChowDown/Pods-ChowDown.release.xcconfig"; sourceTree = "<group>"; };
+		8330CFEB5B95FAECAD8AFE5E /* Pods-ChowDownTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChowDownTests.debug.xcconfig"; path = "Target Support Files/Pods-ChowDownTests/Pods-ChowDownTests.debug.xcconfig"; sourceTree = "<group>"; };
+		855212772BF3CA0A003557AF /* ChowDown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChowDown.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8552127A2BF3CA0A003557AF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8552127B2BF3CA0A003557AF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8552127D2BF3CA0A003557AF /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		8552127E2BF3CA0A003557AF /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		855212802BF3CA0A003557AF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		855212812BF3CA0A003557AF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		855212862BF3CA0B003557AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		855212892BF3CA0B003557AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8552128B2BF3CA0B003557AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8552128C2BF3CA0B003557AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		855212922BF3CA0B003557AF /* ChowDownTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChowDownTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		855212962BF3CA0B003557AF /* ChowDownTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChowDownTests.m; sourceTree = "<group>"; };
+		8552129C2BF3CA0B003557AF /* ChowDownUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChowDownUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		855212A02BF3CA0B003557AF /* ChowDownUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChowDownUITests.m; sourceTree = "<group>"; };
+		855212A22BF3CA0B003557AF /* ChowDownUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChowDownUITestsLaunchTests.m; sourceTree = "<group>"; };
+		855212AF2BF3CB17003557AF /* ChowDown-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChowDown-prefix.pch"; sourceTree = "<group>"; };
+		855212B22BF3CB52003557AF /* CDCommonMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDCommonMacro.h; sourceTree = "<group>"; };
+		855212B32BF3CB7A003557AF /* CDCommonUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDCommonUtils.h; sourceTree = "<group>"; };
+		855212B42BF3CB80003557AF /* CDCommonUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDCommonUtils.m; sourceTree = "<group>"; };
+		855212B62BF3CBCF003557AF /* UIView+Helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Helper.h"; sourceTree = "<group>"; };
+		855212B72BF3CBCF003557AF /* UIView+Helper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Helper.m"; sourceTree = "<group>"; };
+		9C17DCBE62B79C1BFA0D3E3B /* Pods-ChowDownTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChowDownTests.release.xcconfig"; path = "Target Support Files/Pods-ChowDownTests/Pods-ChowDownTests.release.xcconfig"; sourceTree = "<group>"; };
+		D70FAE0BF86CE04151C2E721 /* Pods-ChowDown.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChowDown.debug.xcconfig"; path = "Target Support Files/Pods-ChowDown/Pods-ChowDown.debug.xcconfig"; sourceTree = "<group>"; };
+		D9EA5C0DAA774CB468DA5EE8 /* Pods-ChowDown-ChowDownUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChowDown-ChowDownUITests.debug.xcconfig"; path = "Target Support Files/Pods-ChowDown-ChowDownUITests/Pods-ChowDown-ChowDownUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E360316C9227CBF27DA877B4 /* Pods-ChowDown-ChowDownUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChowDown-ChowDownUITests.release.xcconfig"; path = "Target Support Files/Pods-ChowDown-ChowDownUITests/Pods-ChowDown-ChowDownUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		855212742BF3CA0A003557AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F67B08B83A1A83D9BCA91EC5 /* Pods_ChowDown.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8552128F2BF3CA0B003557AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E711FAEF22B34C6F037C8FDF /* Pods_ChowDownTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		855212992BF3CA0B003557AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47B56CFCD45A16F1EAA34406 /* Pods_ChowDown_ChowDownUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02F72FA0EF9B68EB06F5A220 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03C2DA6403AF9C361C9DC8F4 /* Pods_ChowDown.framework */,
+				0C2D9861E0F2D883679203BC /* Pods_ChowDown_ChowDownUITests.framework */,
+				1615DF34F92EF7B6F2ED23C1 /* Pods_ChowDownTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		585889B1914B21D2E2AD02EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D70FAE0BF86CE04151C2E721 /* Pods-ChowDown.debug.xcconfig */,
+				3CD260FC390B077A011CACC5 /* Pods-ChowDown.release.xcconfig */,
+				D9EA5C0DAA774CB468DA5EE8 /* Pods-ChowDown-ChowDownUITests.debug.xcconfig */,
+				E360316C9227CBF27DA877B4 /* Pods-ChowDown-ChowDownUITests.release.xcconfig */,
+				8330CFEB5B95FAECAD8AFE5E /* Pods-ChowDownTests.debug.xcconfig */,
+				9C17DCBE62B79C1BFA0D3E3B /* Pods-ChowDownTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8552126E2BF3CA0A003557AF = {
+			isa = PBXGroup;
+			children = (
+				855212792BF3CA0A003557AF /* ChowDown */,
+				855212952BF3CA0B003557AF /* ChowDownTests */,
+				8552129F2BF3CA0B003557AF /* ChowDownUITests */,
+				855212782BF3CA0A003557AF /* Products */,
+				585889B1914B21D2E2AD02EE /* Pods */,
+				02F72FA0EF9B68EB06F5A220 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		855212782BF3CA0A003557AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				855212772BF3CA0A003557AF /* ChowDown.app */,
+				855212922BF3CA0B003557AF /* ChowDownTests.xctest */,
+				8552129C2BF3CA0B003557AF /* ChowDownUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		855212792BF3CA0A003557AF /* ChowDown */ = {
+			isa = PBXGroup;
+			children = (
+				855212B02BF3CB2D003557AF /* Modules */,
+				8552127A2BF3CA0A003557AF /* AppDelegate.h */,
+				8552127B2BF3CA0A003557AF /* AppDelegate.m */,
+				8552127D2BF3CA0A003557AF /* SceneDelegate.h */,
+				8552127E2BF3CA0A003557AF /* SceneDelegate.m */,
+				855212802BF3CA0A003557AF /* ViewController.h */,
+				855212812BF3CA0A003557AF /* ViewController.m */,
+				855212862BF3CA0B003557AF /* Assets.xcassets */,
+				855212882BF3CA0B003557AF /* LaunchScreen.storyboard */,
+				8552128B2BF3CA0B003557AF /* Info.plist */,
+				8552128C2BF3CA0B003557AF /* main.m */,
+				855212AF2BF3CB17003557AF /* ChowDown-prefix.pch */,
+			);
+			path = ChowDown;
+			sourceTree = "<group>";
+		};
+		855212952BF3CA0B003557AF /* ChowDownTests */ = {
+			isa = PBXGroup;
+			children = (
+				855212962BF3CA0B003557AF /* ChowDownTests.m */,
+			);
+			path = ChowDownTests;
+			sourceTree = "<group>";
+		};
+		8552129F2BF3CA0B003557AF /* ChowDownUITests */ = {
+			isa = PBXGroup;
+			children = (
+				855212A02BF3CA0B003557AF /* ChowDownUITests.m */,
+				855212A22BF3CA0B003557AF /* ChowDownUITestsLaunchTests.m */,
+			);
+			path = ChowDownUITests;
+			sourceTree = "<group>";
+		};
+		855212B02BF3CB2D003557AF /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				855212B12BF3CB39003557AF /* Common */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		855212B12BF3CB39003557AF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				855212B22BF3CB52003557AF /* CDCommonMacro.h */,
+				855212B32BF3CB7A003557AF /* CDCommonUtils.h */,
+				855212B42BF3CB80003557AF /* CDCommonUtils.m */,
+				855212B62BF3CBCF003557AF /* UIView+Helper.h */,
+				855212B72BF3CBCF003557AF /* UIView+Helper.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		855212762BF3CA0A003557AF /* ChowDown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 855212A62BF3CA0B003557AF /* Build configuration list for PBXNativeTarget "ChowDown" */;
+			buildPhases = (
+				0B3E9F99EC9F956254C7E8D6 /* [CP] Check Pods Manifest.lock */,
+				855212732BF3CA0A003557AF /* Sources */,
+				855212742BF3CA0A003557AF /* Frameworks */,
+				855212752BF3CA0A003557AF /* Resources */,
+				2223C964540C91F3D7E311FE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChowDown;
+			productName = ChowDown;
+			productReference = 855212772BF3CA0A003557AF /* ChowDown.app */;
+			productType = "com.apple.product-type.application";
+		};
+		855212912BF3CA0B003557AF /* ChowDownTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 855212A92BF3CA0B003557AF /* Build configuration list for PBXNativeTarget "ChowDownTests" */;
+			buildPhases = (
+				6071A8929AB68CD22DB537AB /* [CP] Check Pods Manifest.lock */,
+				8552128E2BF3CA0B003557AF /* Sources */,
+				8552128F2BF3CA0B003557AF /* Frameworks */,
+				855212902BF3CA0B003557AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				855212942BF3CA0B003557AF /* PBXTargetDependency */,
+			);
+			name = ChowDownTests;
+			productName = ChowDownTests;
+			productReference = 855212922BF3CA0B003557AF /* ChowDownTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8552129B2BF3CA0B003557AF /* ChowDownUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 855212AC2BF3CA0B003557AF /* Build configuration list for PBXNativeTarget "ChowDownUITests" */;
+			buildPhases = (
+				FF26CD80F621CA0E27034912 /* [CP] Check Pods Manifest.lock */,
+				855212982BF3CA0B003557AF /* Sources */,
+				855212992BF3CA0B003557AF /* Frameworks */,
+				8552129A2BF3CA0B003557AF /* Resources */,
+				333D80D65AC6D6C1DEF57F7A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8552129E2BF3CA0B003557AF /* PBXTargetDependency */,
+			);
+			name = ChowDownUITests;
+			productName = ChowDownUITests;
+			productReference = 8552129C2BF3CA0B003557AF /* ChowDownUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8552126F2BF3CA0A003557AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					855212762BF3CA0A003557AF = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					855212912BF3CA0B003557AF = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 855212762BF3CA0A003557AF;
+					};
+					8552129B2BF3CA0B003557AF = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 855212762BF3CA0A003557AF;
+					};
+				};
+			};
+			buildConfigurationList = 855212722BF3CA0A003557AF /* Build configuration list for PBXProject "ChowDown" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8552126E2BF3CA0A003557AF;
+			productRefGroup = 855212782BF3CA0A003557AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				855212762BF3CA0A003557AF /* ChowDown */,
+				855212912BF3CA0B003557AF /* ChowDownTests */,
+				8552129B2BF3CA0B003557AF /* ChowDownUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		855212752BF3CA0A003557AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8552128A2BF3CA0B003557AF /* LaunchScreen.storyboard in Resources */,
+				855212872BF3CA0B003557AF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		855212902BF3CA0B003557AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8552129A2BF3CA0B003557AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B3E9F99EC9F956254C7E8D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChowDown-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2223C964540C91F3D7E311FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChowDown/Pods-ChowDown-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChowDown/Pods-ChowDown-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChowDown/Pods-ChowDown-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		333D80D65AC6D6C1DEF57F7A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChowDown-ChowDownUITests/Pods-ChowDown-ChowDownUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChowDown-ChowDownUITests/Pods-ChowDown-ChowDownUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChowDown-ChowDownUITests/Pods-ChowDown-ChowDownUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6071A8929AB68CD22DB537AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChowDownTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF26CD80F621CA0E27034912 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChowDown-ChowDownUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		855212732BF3CA0A003557AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				855212822BF3CA0A003557AF /* ViewController.m in Sources */,
+				8552127C2BF3CA0A003557AF /* AppDelegate.m in Sources */,
+				855212B82BF3CBCF003557AF /* UIView+Helper.m in Sources */,
+				855212B52BF3CB80003557AF /* CDCommonUtils.m in Sources */,
+				8552128D2BF3CA0B003557AF /* main.m in Sources */,
+				8552127F2BF3CA0A003557AF /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8552128E2BF3CA0B003557AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				855212972BF3CA0B003557AF /* ChowDownTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		855212982BF3CA0B003557AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				855212A12BF3CA0B003557AF /* ChowDownUITests.m in Sources */,
+				855212A32BF3CA0B003557AF /* ChowDownUITestsLaunchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		855212942BF3CA0B003557AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 855212762BF3CA0A003557AF /* ChowDown */;
+			targetProxy = 855212932BF3CA0B003557AF /* PBXContainerItemProxy */;
+		};
+		8552129E2BF3CA0B003557AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 855212762BF3CA0A003557AF /* ChowDown */;
+			targetProxy = 8552129D2BF3CA0B003557AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		855212882BF3CA0B003557AF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				855212892BF3CA0B003557AF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		855212A42BF3CA0B003557AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		855212A52BF3CA0B003557AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		855212A72BF3CA0B003557AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D70FAE0BF86CE04151C2E721 /* Pods-ChowDown.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = THDA2HN25J;
+				GCC_PREFIX_HEADER = "ChowDown/ChowDown-prefix.pch";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChowDown/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hku.cs7705.project.ChowDown;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		855212A82BF3CA0B003557AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CD260FC390B077A011CACC5 /* Pods-ChowDown.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = THDA2HN25J;
+				GCC_PREFIX_HEADER = "ChowDown/ChowDown-prefix.pch";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChowDown/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hku.cs7705.project.ChowDown;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		855212AA2BF3CA0B003557AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8330CFEB5B95FAECAD8AFE5E /* Pods-ChowDownTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = THDA2HN25J;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hku.cs7705.project.ChowDownTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChowDown.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ChowDown";
+			};
+			name = Debug;
+		};
+		855212AB2BF3CA0B003557AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C17DCBE62B79C1BFA0D3E3B /* Pods-ChowDownTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = THDA2HN25J;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hku.cs7705.project.ChowDownTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChowDown.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ChowDown";
+			};
+			name = Release;
+		};
+		855212AD2BF3CA0B003557AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9EA5C0DAA774CB468DA5EE8 /* Pods-ChowDown-ChowDownUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = THDA2HN25J;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hku.cs7705.project.ChowDownUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChowDown;
+			};
+			name = Debug;
+		};
+		855212AE2BF3CA0B003557AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E360316C9227CBF27DA877B4 /* Pods-ChowDown-ChowDownUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = THDA2HN25J;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hku.cs7705.project.ChowDownUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChowDown;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		855212722BF3CA0A003557AF /* Build configuration list for PBXProject "ChowDown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				855212A42BF3CA0B003557AF /* Debug */,
+				855212A52BF3CA0B003557AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		855212A62BF3CA0B003557AF /* Build configuration list for PBXNativeTarget "ChowDown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				855212A72BF3CA0B003557AF /* Debug */,
+				855212A82BF3CA0B003557AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		855212A92BF3CA0B003557AF /* Build configuration list for PBXNativeTarget "ChowDownTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				855212AA2BF3CA0B003557AF /* Debug */,
+				855212AB2BF3CA0B003557AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		855212AC2BF3CA0B003557AF /* Build configuration list for PBXNativeTarget "ChowDownUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				855212AD2BF3CA0B003557AF /* Debug */,
+				855212AE2BF3CA0B003557AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8552126F2BF3CA0A003557AF /* Project object */;
+}
