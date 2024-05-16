@@ -19,6 +19,7 @@
 		855212A32BF3CA0B003557AF /* ChowDownUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 855212A22BF3CA0B003557AF /* ChowDownUITestsLaunchTests.m */; };
 		855212B52BF3CB80003557AF /* CDCommonUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 855212B42BF3CB80003557AF /* CDCommonUtils.m */; };
 		855212B82BF3CBCF003557AF /* UIView+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 855212B72BF3CBCF003557AF /* UIView+Helper.m */; };
+		85EE891F2BF6732200088D53 /* CDNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 85EE891E2BF6732200088D53 /* CDNetworkManager.m */; };
 		E711FAEF22B34C6F037C8FDF /* Pods_ChowDownTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1615DF34F92EF7B6F2ED23C1 /* Pods_ChowDownTests.framework */; };
 		F67B08B83A1A83D9BCA91EC5 /* Pods_ChowDown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C2DA6403AF9C361C9DC8F4 /* Pods_ChowDown.framework */; };
 /* End PBXBuildFile section */
@@ -68,6 +69,9 @@
 		855212B42BF3CB80003557AF /* CDCommonUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDCommonUtils.m; sourceTree = "<group>"; };
 		855212B62BF3CBCF003557AF /* UIView+Helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Helper.h"; sourceTree = "<group>"; };
 		855212B72BF3CBCF003557AF /* UIView+Helper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Helper.m"; sourceTree = "<group>"; };
+		85EE891C2BF6730500088D53 /* CDApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDApi.h; sourceTree = "<group>"; };
+		85EE891D2BF6731200088D53 /* CDNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDNetworkManager.h; sourceTree = "<group>"; };
+		85EE891E2BF6732200088D53 /* CDNetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDNetworkManager.m; sourceTree = "<group>"; };
 		9C17DCBE62B79C1BFA0D3E3B /* Pods-ChowDownTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChowDownTests.release.xcconfig"; path = "Target Support Files/Pods-ChowDownTests/Pods-ChowDownTests.release.xcconfig"; sourceTree = "<group>"; };
 		D70FAE0BF86CE04151C2E721 /* Pods-ChowDown.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChowDown.debug.xcconfig"; path = "Target Support Files/Pods-ChowDown/Pods-ChowDown.debug.xcconfig"; sourceTree = "<group>"; };
 		D9EA5C0DAA774CB468DA5EE8 /* Pods-ChowDown-ChowDownUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChowDown-ChowDownUITests.debug.xcconfig"; path = "Target Support Files/Pods-ChowDown-ChowDownUITests/Pods-ChowDown-ChowDownUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -122,7 +126,6 @@
 				8330CFEB5B95FAECAD8AFE5E /* Pods-ChowDownTests.debug.xcconfig */,
 				9C17DCBE62B79C1BFA0D3E3B /* Pods-ChowDownTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -187,6 +190,7 @@
 		855212B02BF3CB2D003557AF /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				85EE891B2BF672E700088D53 /* Network */,
 				855212B12BF3CB39003557AF /* Common */,
 			);
 			path = Modules;
@@ -202,6 +206,16 @@
 				855212B72BF3CBCF003557AF /* UIView+Helper.m */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		85EE891B2BF672E700088D53 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				85EE891C2BF6730500088D53 /* CDApi.h */,
+				85EE891D2BF6731200088D53 /* CDNetworkManager.h */,
+				85EE891E2BF6732200088D53 /* CDNetworkManager.m */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -441,6 +455,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85EE891F2BF6732200088D53 /* CDNetworkManager.m in Sources */,
 				855212822BF3CA0A003557AF /* ViewController.m in Sources */,
 				8552127C2BF3CA0A003557AF /* AppDelegate.m in Sources */,
 				855212B82BF3CBCF003557AF /* UIView+Helper.m in Sources */,

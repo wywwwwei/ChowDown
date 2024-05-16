@@ -8,6 +8,7 @@ target 'ChowDown' do
   # Pods for ChowDown
   pod 'Masonry'
   pod 'BlocksKit'
+  pod 'AFNetworking'
 
   target 'ChowDownTests' do
     inherit! :search_paths
