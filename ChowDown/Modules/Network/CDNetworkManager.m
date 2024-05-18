@@ -7,7 +7,20 @@
 
 #import "CDNetworkManager.h"
 
+@implementation CDHTTPRequest
+
+@end
+
+@implementation CDHTTPResponse
+
+@end
+
 @implementation CDNetworkManager
 
+- (void)sendRequest:(CDHTTPRequest *)request
+          onSuccess:(CDRequestSuccess)successBlock
+             onFail:(CDRequestFailure)failBlock {
+    
+}
 
 @end
