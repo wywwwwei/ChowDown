@@ -11,6 +11,7 @@
 #import <Foundation/Foundation.h>
 
 #import "UIView+Helper.h"
+#import "UIColor+Helper.h"
 #import "CDCommonMacro.h"
 #import "CDCommonUtils.h"
 

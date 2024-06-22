@@ -9,6 +9,7 @@ target 'ChowDown' do
   pod 'Masonry'
   pod 'BlocksKit'
   pod 'AFNetworking'
+  pod 'SDWebImage', '~> 5.0'
 
   target 'ChowDownTests' do
     inherit! :search_paths

@@ -19,6 +19,14 @@
 		855212A32BF3CA0B003557AF /* ChowDownUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 855212A22BF3CA0B003557AF /* ChowDownUITestsLaunchTests.m */; };
 		855212B52BF3CB80003557AF /* CDCommonUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 855212B42BF3CB80003557AF /* CDCommonUtils.m */; };
 		855212B82BF3CBCF003557AF /* UIView+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 855212B72BF3CBCF003557AF /* UIView+Helper.m */; };
+		85E5AC462C260FC4004660EA /* CDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E5AC452C260FC4004660EA /* CDLoginViewController.m */; };
+		85E5AC492C2612E9004660EA /* UIColor+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E5AC482C2612E9004660EA /* UIColor+Helper.m */; };
+		85E5AC4D2C2620B0004660EA /* CDMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E5AC4C2C2620B0004660EA /* CDMainViewController.m */; };
+		85E5AC512C262206004660EA /* CDProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E5AC502C262206004660EA /* CDProfileViewController.m */; };
+		85E5AC552C262272004660EA /* CDHomepageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E5AC542C262272004660EA /* CDHomepageViewController.m */; };
+		85E5AC582C262C29004660EA /* CDMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E5AC572C262C29004660EA /* CDMainTabBarController.m */; };
+		85E5AC5B2C264572004660EA /* CDProfileFunctionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E5AC5A2C264572004660EA /* CDProfileFunctionCell.m */; };
+		85E5AC5E2C264E04004660EA /* CDHomepageShopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E5AC5D2C264E04004660EA /* CDHomepageShopCell.m */; };
 		85EE891F2BF6732200088D53 /* CDNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 85EE891E2BF6732200088D53 /* CDNetworkManager.m */; };
 		E711FAEF22B34C6F037C8FDF /* Pods_ChowDownTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1615DF34F92EF7B6F2ED23C1 /* Pods_ChowDownTests.framework */; };
 		F67B08B83A1A83D9BCA91EC5 /* Pods_ChowDown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C2DA6403AF9C361C9DC8F4 /* Pods_ChowDown.framework */; };
@@ -69,6 +77,22 @@
 		855212B42BF3CB80003557AF /* CDCommonUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDCommonUtils.m; sourceTree = "<group>"; };
 		855212B62BF3CBCF003557AF /* UIView+Helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Helper.h"; sourceTree = "<group>"; };
 		855212B72BF3CBCF003557AF /* UIView+Helper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Helper.m"; sourceTree = "<group>"; };
+		85E5AC442C260FBD004660EA /* CDLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDLoginViewController.h; sourceTree = "<group>"; };
+		85E5AC452C260FC4004660EA /* CDLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDLoginViewController.m; sourceTree = "<group>"; };
+		85E5AC472C2612E9004660EA /* UIColor+Helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Helper.h"; sourceTree = "<group>"; };
+		85E5AC482C2612E9004660EA /* UIColor+Helper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Helper.m"; sourceTree = "<group>"; };
+		85E5AC4B2C2620A8004660EA /* CDMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDMainViewController.h; sourceTree = "<group>"; };
+		85E5AC4C2C2620B0004660EA /* CDMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDMainViewController.m; sourceTree = "<group>"; };
+		85E5AC4F2C2621FF004660EA /* CDProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDProfileViewController.h; sourceTree = "<group>"; };
+		85E5AC502C262206004660EA /* CDProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDProfileViewController.m; sourceTree = "<group>"; };
+		85E5AC532C26226C004660EA /* CDHomepageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDHomepageViewController.h; sourceTree = "<group>"; };
+		85E5AC542C262272004660EA /* CDHomepageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDHomepageViewController.m; sourceTree = "<group>"; };
+		85E5AC562C262C23004660EA /* CDMainTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDMainTabBarController.h; sourceTree = "<group>"; };
+		85E5AC572C262C29004660EA /* CDMainTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDMainTabBarController.m; sourceTree = "<group>"; };
+		85E5AC592C26456C004660EA /* CDProfileFunctionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDProfileFunctionCell.h; sourceTree = "<group>"; };
+		85E5AC5A2C264572004660EA /* CDProfileFunctionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDProfileFunctionCell.m; sourceTree = "<group>"; };
+		85E5AC5C2C264DFD004660EA /* CDHomepageShopCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDHomepageShopCell.h; sourceTree = "<group>"; };
+		85E5AC5D2C264E04004660EA /* CDHomepageShopCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDHomepageShopCell.m; sourceTree = "<group>"; };
 		85EE891C2BF6730500088D53 /* CDApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDApi.h; sourceTree = "<group>"; };
 		85EE891D2BF6731200088D53 /* CDNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDNetworkManager.h; sourceTree = "<group>"; };
 		85EE891E2BF6732200088D53 /* CDNetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDNetworkManager.m; sourceTree = "<group>"; };
@@ -190,6 +214,7 @@
 		855212B02BF3CB2D003557AF /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				85E5AC422C260FA6004660EA /* Business */,
 				85EE891B2BF672E700088D53 /* Network */,
 				855212B12BF3CB39003557AF /* Common */,
 			);
@@ -204,8 +229,63 @@
 				855212B42BF3CB80003557AF /* CDCommonUtils.m */,
 				855212B62BF3CBCF003557AF /* UIView+Helper.h */,
 				855212B72BF3CBCF003557AF /* UIView+Helper.m */,
+				85E5AC472C2612E9004660EA /* UIColor+Helper.h */,
+				85E5AC482C2612E9004660EA /* UIColor+Helper.m */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		85E5AC422C260FA6004660EA /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				85E5AC522C26225B004660EA /* Homepage */,
+				85E5AC4E2C2621EA004660EA /* Profile */,
+				85E5AC4A2C262094004660EA /* Main */,
+				85E5AC432C260FAD004660EA /* Login */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		85E5AC432C260FAD004660EA /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				85E5AC442C260FBD004660EA /* CDLoginViewController.h */,
+				85E5AC452C260FC4004660EA /* CDLoginViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		85E5AC4A2C262094004660EA /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				85E5AC4B2C2620A8004660EA /* CDMainViewController.h */,
+				85E5AC4C2C2620B0004660EA /* CDMainViewController.m */,
+				85E5AC562C262C23004660EA /* CDMainTabBarController.h */,
+				85E5AC572C262C29004660EA /* CDMainTabBarController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		85E5AC4E2C2621EA004660EA /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				85E5AC4F2C2621FF004660EA /* CDProfileViewController.h */,
+				85E5AC502C262206004660EA /* CDProfileViewController.m */,
+				85E5AC592C26456C004660EA /* CDProfileFunctionCell.h */,
+				85E5AC5A2C264572004660EA /* CDProfileFunctionCell.m */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		85E5AC522C26225B004660EA /* Homepage */ = {
+			isa = PBXGroup;
+			children = (
+				85E5AC532C26226C004660EA /* CDHomepageViewController.h */,
+				85E5AC542C262272004660EA /* CDHomepageViewController.m */,
+				85E5AC5D2C264E04004660EA /* CDHomepageShopCell.m */,
+				85E5AC5C2C264DFD004660EA /* CDHomepageShopCell.h */,
+			);
+			path = Homepage;
 			sourceTree = "<group>";
 		};
 		85EE891B2BF672E700088D53 /* Network */ = {
@@ -456,12 +536,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				85EE891F2BF6732200088D53 /* CDNetworkManager.m in Sources */,
+				85E5AC462C260FC4004660EA /* CDLoginViewController.m in Sources */,
+				85E5AC5B2C264572004660EA /* CDProfileFunctionCell.m in Sources */,
+				85E5AC492C2612E9004660EA /* UIColor+Helper.m in Sources */,
+				85E5AC512C262206004660EA /* CDProfileViewController.m in Sources */,
 				855212822BF3CA0A003557AF /* ViewController.m in Sources */,
 				8552127C2BF3CA0A003557AF /* AppDelegate.m in Sources */,
 				855212B82BF3CBCF003557AF /* UIView+Helper.m in Sources */,
+				85E5AC4D2C2620B0004660EA /* CDMainViewController.m in Sources */,
 				855212B52BF3CB80003557AF /* CDCommonUtils.m in Sources */,
+				85E5AC582C262C29004660EA /* CDMainTabBarController.m in Sources */,
+				85E5AC552C262272004660EA /* CDHomepageViewController.m in Sources */,
 				8552128D2BF3CA0B003557AF /* main.m in Sources */,
 				8552127F2BF3CA0A003557AF /* SceneDelegate.m in Sources */,
+				85E5AC5E2C264E04004660EA /* CDHomepageShopCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

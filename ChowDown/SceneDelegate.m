@@ -6,7 +6,7 @@
 //
 
 #import "SceneDelegate.h"
-#import "ViewController.h"
+#import "CDLoginViewController.h"
 
 @interface SceneDelegate ()
 
@@ -24,7 +24,7 @@
     }
     UIWindowScene *windowScene = (UIWindowScene *)scene;
     self.window = [[UIWindow alloc] initWithWindowScene:windowScene];
-    UIViewController *vc = [[ViewController alloc] init];
+    UIViewController *vc = [[CDLoginViewController alloc] init];
     UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController = navVC;
     [self.window makeKeyAndVisible];

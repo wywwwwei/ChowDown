@@ -30,23 +30,29 @@ PODS:
     - BlocksKit/Core
     - BlocksKit/DynamicDelegate
   - Masonry (1.1.0)
+  - SDWebImage (5.19.1):
+    - SDWebImage/Core (= 5.19.1)
+  - SDWebImage/Core (5.19.1)
 
 DEPENDENCIES:
   - AFNetworking
   - BlocksKit
   - Masonry
+  - SDWebImage (~> 5.0)
 
 SPEC REPOS:
   trunk:
     - AFNetworking
     - BlocksKit
     - Masonry
+    - SDWebImage
 
 SPEC CHECKSUMS:
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
   BlocksKit: 8639b2848dd51c35c957af4d9fbdc7a769a1fc12
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SDWebImage: 40b0b4053e36c660a764958bff99eed16610acbb
 
-PODFILE CHECKSUM: faa44bd594f6b567b76b34430cb2266b034d973b
+PODFILE CHECKSUM: 5ff152df2ad853fdefe8bf94b1db709ce70ab429
 
 COCOAPODS: 1.13.0
