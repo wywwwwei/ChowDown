@@ -191,7 +191,6 @@
     WEAK_REF(self);
     UITapGestureRecognizer *gesture = [UITapGestureRecognizer bk_recognizerWithHandler:^(UIGestureRecognizer *sender, UIGestureRecognizerState state, CGPoint location) {
         STRONG_REF(self);
-        CDRegisterViewController *registerVC = [[CDRegisterViewController alloc] init];
         [self.navigationController popViewControllerAnimated:YES];
     }];
     self.loginLabel.userInteractionEnabled = YES;
