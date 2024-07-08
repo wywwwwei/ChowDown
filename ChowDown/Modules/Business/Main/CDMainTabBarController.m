@@ -7,19 +7,11 @@
 
 #import "CDMainTabBarController.h"
 
-const CGFloat CDMainTabBarHeight = 49.f;
-
 @interface CDMainTabBar : UITabBar
 
 @end
 
 @implementation CDMainTabBar
-
-- (CGSize)sizeThatFits:(CGSize)size {
-    CGSize newSize = [super sizeThatFits:size];
-    newSize.height += [CDCommonUtils safeAreaInsets].bottom;
-    return newSize;
-}
 
 @end
 

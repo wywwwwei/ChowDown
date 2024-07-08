@@ -72,8 +72,7 @@
         make.height.mas_equalTo(50);
     }];
     
-    self.searchIcon = [[UIImageView alloc] init];
-    [self.searchIcon sd_setImageWithURL:[NSURL URLWithString:@"https://img.icons8.com/?size=60&id=59878&format=png"]];
+    self.searchIcon = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"search"]];
     [self.searchBar addSubview:self.searchIcon];
     [self.searchIcon mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.height.mas_equalTo(28);

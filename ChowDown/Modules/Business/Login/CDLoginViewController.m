@@ -121,8 +121,12 @@
     WEAK_REF(self);
     [self.loginButton bk_addEventHandler:^(id sender) {
         STRONG_REF(self);
-        CDMainViewController *mainVC = [[CDMainViewController alloc] init];
-        [self.navigationController pushViewController:mainVC animated:NO];
+        [CDLoadingView showLoading];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 2 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+            [CDLoadingView dismissLoading];
+            CDMainViewController *mainVC = [[CDMainViewController alloc] init];
+            [self.navigationController pushViewController:mainVC animated:NO];
+        });
     } forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.loginButton];
     

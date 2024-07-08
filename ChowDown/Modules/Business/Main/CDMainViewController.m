@@ -68,6 +68,7 @@
     appearance.stackedLayoutAppearance = itemAppearance;
     self.bottomTabBarController.tabBar.standardAppearance = appearance;
     self.bottomTabBarController.tabBar.scrollEdgeAppearance = appearance;
+    self.bottomTabBarController.additionalSafeAreaInsets = UIEdgeInsetsMake(0, 0, [CDCommonUtils safeAreaInsets].bottom, 0);
     [self.view addSubview:self.bottomTabBarController.view];
 }
 
