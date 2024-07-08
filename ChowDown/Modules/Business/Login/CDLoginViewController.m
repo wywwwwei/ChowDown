@@ -62,7 +62,7 @@
                            range:NSMakeRange(0, 4)];
     // setting "Down" yellow color
     [attributedText addAttribute:NSForegroundColorAttributeName
-                           value:HEXCOLOR(0xFFC600)
+                           value:THEME_COLOR
                            range:NSMakeRange(5, 4)];
     self.appTitleLabel.attributedText = attributedText;
     [self.view addSubview:self.appTitleLabel];
@@ -116,7 +116,7 @@
     self.loginButton.titleLabel.font = [UIFont systemFontOfSize:18 weight:UIFontWeightRegular];
     [self.loginButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [self.loginButton setTitle:@"Login" forState:UIControlStateNormal];
-    self.loginButton.backgroundColor = HEXCOLOR(0xFFC600);
+    self.loginButton.backgroundColor = THEME_COLOR;
     self.loginButton.layer.cornerRadius = 8.0;
     WEAK_REF(self);
     [self.loginButton bk_addEventHandler:^(id sender) {

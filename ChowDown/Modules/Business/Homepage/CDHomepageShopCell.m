@@ -9,10 +9,6 @@
 #import <Masonry/Masonry.h>
 #import <SDWebImage/UIImageView+WebCache.h>
 
-@implementation CDHomepageShopItem
-
-@end
-
 @interface CDHomepageShopCell ()
 
 @property (nonatomic, strong) UIImageView *avatarView;

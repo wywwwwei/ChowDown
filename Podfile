@@ -11,6 +11,9 @@ target 'ChowDown' do
   pod 'AFNetworking'
   pod 'SDWebImage', '~> 5.0'
   pod 'WechatOpenSDK-XCFramework'
+  pod 'IQKeyboardManager'
+  pod 'SVProgressHUD'
+  pod 'YNPageViewController'
 
   target 'ChowDownTests' do
     inherit! :search_paths

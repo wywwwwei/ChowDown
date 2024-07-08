@@ -23,6 +23,26 @@
 		859FA7B02C3B2BE80066BDC6 /* CDNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 859FA7AF2C3B2BE80066BDC6 /* CDNavigationBar.m */; };
 		859FA7B32C3B2C040066BDC6 /* CDToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 859FA7B22C3B2C040066BDC6 /* CDToast.m */; };
 		859FA7B62C3BD5700066BDC6 /* CDLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 859FA7B52C3BD5700066BDC6 /* CDLoadingView.m */; };
+		859FA7C42C3C3C150066BDC6 /* CDHomepageShopItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 859FA7C32C3C3C150066BDC6 /* CDHomepageShopItem.m */; };
+		859FA7D02C3C3D2A0066BDC6 /* CDShopDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 859FA7CC2C3C3D2A0066BDC6 /* CDShopDetailsViewController.m */; };
+		859FA7D12C3C3D2A0066BDC6 /* CDSubmitOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 859FA7CE2C3C3D2A0066BDC6 /* CDSubmitOrderViewController.m */; };
+		859FA7D52C3C3D3C0066BDC6 /* CDShopDetailsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 859FA7D42C3C3D3C0066BDC6 /* CDShopDetailsModel.m */; };
+		859FA7E72C3C3D710066BDC6 /* CDShoppingCartViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 859FA7D92C3C3D710066BDC6 /* CDShoppingCartViewCell.m */; };
+		859FA7E82C3C3D710066BDC6 /* CDShoppingCartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 859FA7DC2C3C3D710066BDC6 /* CDShoppingCartView.m */; };
+		859FA7E92C3C3D710066BDC6 /* CDSubmitOrderPayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 859FA7DD2C3C3D710066BDC6 /* CDSubmitOrderPayView.m */; };
+		859FA7EA2C3C3D710066BDC6 /* CDShopDetailsHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 859FA7DE2C3C3D710066BDC6 /* CDShopDetailsHeaderView.m */; };
+		859FA7EB2C3C3D710066BDC6 /* CDSubmitOrderHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 859FA7E22C3C3D710066BDC6 /* CDSubmitOrderHeaderView.m */; };
+		859FA7EC2C3C3D710066BDC6 /* CDShopDetailsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 859FA7E32C3C3D710066BDC6 /* CDShopDetailsTableViewCell.m */; };
+		859FA7ED2C3C3D710066BDC6 /* CDSubmitOrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 859FA7E42C3C3D710066BDC6 /* CDSubmitOrderTableViewCell.m */; };
+		859FA7EE2C3C3D710066BDC6 /* CDSubmitOrderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 859FA7E52C3C3D710066BDC6 /* CDSubmitOrderFooterView.m */; };
+		859FA8022C3C47E00066BDC6 /* CDMenuManagementTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 859FA7F12C3C47E00066BDC6 /* CDMenuManagementTableViewCell.m */; };
+		859FA8032C3C47E00066BDC6 /* CDOrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 859FA7F22C3C47E00066BDC6 /* CDOrderTableViewCell.m */; };
+		859FA8042C3C47E00066BDC6 /* CDOrderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 859FA7F52C3C47E00066BDC6 /* CDOrderModel.m */; };
+		859FA8052C3C47E00066BDC6 /* CDMenuManagementModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 859FA7F62C3C47E00066BDC6 /* CDMenuManagementModel.m */; };
+		859FA8062C3C47E00066BDC6 /* CDOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 859FA7FA2C3C47E00066BDC6 /* CDOrderViewController.m */; };
+		859FA8072C3C47E00066BDC6 /* CDMerchantBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 859FA7FB2C3C47E00066BDC6 /* CDMerchantBaseViewController.m */; };
+		859FA8082C3C47E00066BDC6 /* CDOrderDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 859FA7FC2C3C47E00066BDC6 /* CDOrderDetailsViewController.m */; };
+		859FA8092C3C47E00066BDC6 /* CDMenuManagementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 859FA7FD2C3C47E00066BDC6 /* CDMenuManagementViewController.m */; };
 		85E5AC462C260FC4004660EA /* CDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E5AC452C260FC4004660EA /* CDLoginViewController.m */; };
 		85E5AC492C2612E9004660EA /* UIColor+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E5AC482C2612E9004660EA /* UIColor+Helper.m */; };
 		85E5AC4D2C2620B0004660EA /* CDMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E5AC4C2C2620B0004660EA /* CDMainViewController.m */; };
@@ -89,6 +109,46 @@
 		859FA7B22C3B2C040066BDC6 /* CDToast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDToast.m; sourceTree = "<group>"; };
 		859FA7B42C3BD56A0066BDC6 /* CDLoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDLoadingView.h; sourceTree = "<group>"; };
 		859FA7B52C3BD5700066BDC6 /* CDLoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDLoadingView.m; sourceTree = "<group>"; };
+		859FA7C22C3C3C0F0066BDC6 /* CDHomepageShopItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDHomepageShopItem.h; sourceTree = "<group>"; };
+		859FA7C32C3C3C150066BDC6 /* CDHomepageShopItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDHomepageShopItem.m; sourceTree = "<group>"; };
+		859FA7CC2C3C3D2A0066BDC6 /* CDShopDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDShopDetailsViewController.m; sourceTree = "<group>"; };
+		859FA7CD2C3C3D2A0066BDC6 /* CDShopDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDShopDetailsViewController.h; sourceTree = "<group>"; };
+		859FA7CE2C3C3D2A0066BDC6 /* CDSubmitOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDSubmitOrderViewController.m; sourceTree = "<group>"; };
+		859FA7CF2C3C3D2A0066BDC6 /* CDSubmitOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDSubmitOrderViewController.h; sourceTree = "<group>"; };
+		859FA7D32C3C3D3C0066BDC6 /* CDShopDetailsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDShopDetailsModel.h; sourceTree = "<group>"; };
+		859FA7D42C3C3D3C0066BDC6 /* CDShopDetailsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDShopDetailsModel.m; sourceTree = "<group>"; };
+		859FA7D72C3C3D710066BDC6 /* CDSubmitOrderPayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDSubmitOrderPayView.h; sourceTree = "<group>"; };
+		859FA7D82C3C3D710066BDC6 /* CDSubmitOrderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDSubmitOrderTableViewCell.h; sourceTree = "<group>"; };
+		859FA7D92C3C3D710066BDC6 /* CDShoppingCartViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDShoppingCartViewCell.m; sourceTree = "<group>"; };
+		859FA7DA2C3C3D710066BDC6 /* CDShoppingCartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDShoppingCartView.h; sourceTree = "<group>"; };
+		859FA7DB2C3C3D710066BDC6 /* CDSubmitOrderHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDSubmitOrderHeaderView.h; sourceTree = "<group>"; };
+		859FA7DC2C3C3D710066BDC6 /* CDShoppingCartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDShoppingCartView.m; sourceTree = "<group>"; };
+		859FA7DD2C3C3D710066BDC6 /* CDSubmitOrderPayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDSubmitOrderPayView.m; sourceTree = "<group>"; };
+		859FA7DE2C3C3D710066BDC6 /* CDShopDetailsHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDShopDetailsHeaderView.m; sourceTree = "<group>"; };
+		859FA7DF2C3C3D710066BDC6 /* CDShopDetailsHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDShopDetailsHeaderView.h; sourceTree = "<group>"; };
+		859FA7E02C3C3D710066BDC6 /* CDSubmitOrderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDSubmitOrderFooterView.h; sourceTree = "<group>"; };
+		859FA7E12C3C3D710066BDC6 /* CDShopDetailsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDShopDetailsTableViewCell.h; sourceTree = "<group>"; };
+		859FA7E22C3C3D710066BDC6 /* CDSubmitOrderHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDSubmitOrderHeaderView.m; sourceTree = "<group>"; };
+		859FA7E32C3C3D710066BDC6 /* CDShopDetailsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDShopDetailsTableViewCell.m; sourceTree = "<group>"; };
+		859FA7E42C3C3D710066BDC6 /* CDSubmitOrderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDSubmitOrderTableViewCell.m; sourceTree = "<group>"; };
+		859FA7E52C3C3D710066BDC6 /* CDSubmitOrderFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDSubmitOrderFooterView.m; sourceTree = "<group>"; };
+		859FA7E62C3C3D710066BDC6 /* CDShoppingCartViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDShoppingCartViewCell.h; sourceTree = "<group>"; };
+		859FA7F02C3C47E00066BDC6 /* CDOrderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDOrderTableViewCell.h; sourceTree = "<group>"; };
+		859FA7F12C3C47E00066BDC6 /* CDMenuManagementTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDMenuManagementTableViewCell.m; sourceTree = "<group>"; };
+		859FA7F22C3C47E00066BDC6 /* CDOrderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDOrderTableViewCell.m; sourceTree = "<group>"; };
+		859FA7F32C3C47E00066BDC6 /* CDMenuManagementTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDMenuManagementTableViewCell.h; sourceTree = "<group>"; };
+		859FA7F52C3C47E00066BDC6 /* CDOrderModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDOrderModel.m; sourceTree = "<group>"; };
+		859FA7F62C3C47E00066BDC6 /* CDMenuManagementModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDMenuManagementModel.m; sourceTree = "<group>"; };
+		859FA7F72C3C47E00066BDC6 /* CDOrderModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDOrderModel.h; sourceTree = "<group>"; };
+		859FA7F82C3C47E00066BDC6 /* CDMenuManagementModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDMenuManagementModel.h; sourceTree = "<group>"; };
+		859FA7FA2C3C47E00066BDC6 /* CDOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDOrderViewController.m; sourceTree = "<group>"; };
+		859FA7FB2C3C47E00066BDC6 /* CDMerchantBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDMerchantBaseViewController.m; sourceTree = "<group>"; };
+		859FA7FC2C3C47E00066BDC6 /* CDOrderDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDOrderDetailsViewController.m; sourceTree = "<group>"; };
+		859FA7FD2C3C47E00066BDC6 /* CDMenuManagementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDMenuManagementViewController.m; sourceTree = "<group>"; };
+		859FA7FE2C3C47E00066BDC6 /* CDOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDOrderViewController.h; sourceTree = "<group>"; };
+		859FA7FF2C3C47E00066BDC6 /* CDOrderDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDOrderDetailsViewController.h; sourceTree = "<group>"; };
+		859FA8002C3C47E00066BDC6 /* CDMerchantBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDMerchantBaseViewController.h; sourceTree = "<group>"; };
+		859FA8012C3C47E00066BDC6 /* CDMenuManagementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDMenuManagementViewController.h; sourceTree = "<group>"; };
 		85E5AC442C260FBD004660EA /* CDLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDLoginViewController.h; sourceTree = "<group>"; };
 		85E5AC452C260FC4004660EA /* CDLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDLoginViewController.m; sourceTree = "<group>"; };
 		85E5AC472C2612E9004660EA /* UIColor+Helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Helper.h"; sourceTree = "<group>"; };
@@ -262,9 +322,111 @@
 			path = Register;
 			sourceTree = "<group>";
 		};
+		859FA7B72C3C38DD0066BDC6 /* Merchant */ = {
+			isa = PBXGroup;
+			children = (
+				859FA7F92C3C47E00066BDC6 /* Controller */,
+				859FA7F42C3C47E00066BDC6 /* Model */,
+				859FA7EF2C3C47E00066BDC6 /* View */,
+			);
+			path = Merchant;
+			sourceTree = "<group>";
+		};
+		859FA7B82C3C38F90066BDC6 /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				859FA7C52C3C3CFE0066BDC6 /* Controller */,
+				859FA7D22C3C3D300066BDC6 /* Model */,
+				859FA7D62C3C3D440066BDC6 /* View */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
+		859FA7C52C3C3CFE0066BDC6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				859FA7CD2C3C3D2A0066BDC6 /* CDShopDetailsViewController.h */,
+				859FA7CC2C3C3D2A0066BDC6 /* CDShopDetailsViewController.m */,
+				859FA7CF2C3C3D2A0066BDC6 /* CDSubmitOrderViewController.h */,
+				859FA7CE2C3C3D2A0066BDC6 /* CDSubmitOrderViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		859FA7D22C3C3D300066BDC6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				859FA7D32C3C3D3C0066BDC6 /* CDShopDetailsModel.h */,
+				859FA7D42C3C3D3C0066BDC6 /* CDShopDetailsModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		859FA7D62C3C3D440066BDC6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				859FA7DF2C3C3D710066BDC6 /* CDShopDetailsHeaderView.h */,
+				859FA7DE2C3C3D710066BDC6 /* CDShopDetailsHeaderView.m */,
+				859FA7E12C3C3D710066BDC6 /* CDShopDetailsTableViewCell.h */,
+				859FA7E32C3C3D710066BDC6 /* CDShopDetailsTableViewCell.m */,
+				859FA7DA2C3C3D710066BDC6 /* CDShoppingCartView.h */,
+				859FA7DC2C3C3D710066BDC6 /* CDShoppingCartView.m */,
+				859FA7E62C3C3D710066BDC6 /* CDShoppingCartViewCell.h */,
+				859FA7D92C3C3D710066BDC6 /* CDShoppingCartViewCell.m */,
+				859FA7E02C3C3D710066BDC6 /* CDSubmitOrderFooterView.h */,
+				859FA7E52C3C3D710066BDC6 /* CDSubmitOrderFooterView.m */,
+				859FA7DB2C3C3D710066BDC6 /* CDSubmitOrderHeaderView.h */,
+				859FA7E22C3C3D710066BDC6 /* CDSubmitOrderHeaderView.m */,
+				859FA7D72C3C3D710066BDC6 /* CDSubmitOrderPayView.h */,
+				859FA7DD2C3C3D710066BDC6 /* CDSubmitOrderPayView.m */,
+				859FA7D82C3C3D710066BDC6 /* CDSubmitOrderTableViewCell.h */,
+				859FA7E42C3C3D710066BDC6 /* CDSubmitOrderTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		859FA7EF2C3C47E00066BDC6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				859FA7F02C3C47E00066BDC6 /* CDOrderTableViewCell.h */,
+				859FA7F22C3C47E00066BDC6 /* CDOrderTableViewCell.m */,
+				859FA7F32C3C47E00066BDC6 /* CDMenuManagementTableViewCell.h */,
+				859FA7F12C3C47E00066BDC6 /* CDMenuManagementTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		859FA7F42C3C47E00066BDC6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				859FA7F72C3C47E00066BDC6 /* CDOrderModel.h */,
+				859FA7F52C3C47E00066BDC6 /* CDOrderModel.m */,
+				859FA7F82C3C47E00066BDC6 /* CDMenuManagementModel.h */,
+				859FA7F62C3C47E00066BDC6 /* CDMenuManagementModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		859FA7F92C3C47E00066BDC6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				859FA7FE2C3C47E00066BDC6 /* CDOrderViewController.h */,
+				859FA7FA2C3C47E00066BDC6 /* CDOrderViewController.m */,
+				859FA8002C3C47E00066BDC6 /* CDMerchantBaseViewController.h */,
+				859FA7FB2C3C47E00066BDC6 /* CDMerchantBaseViewController.m */,
+				859FA7FF2C3C47E00066BDC6 /* CDOrderDetailsViewController.h */,
+				859FA7FC2C3C47E00066BDC6 /* CDOrderDetailsViewController.m */,
+				859FA8012C3C47E00066BDC6 /* CDMenuManagementViewController.h */,
+				859FA7FD2C3C47E00066BDC6 /* CDMenuManagementViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		85E5AC422C260FA6004660EA /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				859FA7B82C3C38F90066BDC6 /* Shop */,
+				859FA7B72C3C38DD0066BDC6 /* Merchant */,
 				859985EB2C3B28C3001B395A /* Register */,
 				85E5AC522C26225B004660EA /* Homepage */,
 				85E5AC4E2C2621EA004660EA /* Profile */,
@@ -310,8 +472,10 @@
 			children = (
 				85E5AC532C26226C004660EA /* CDHomepageViewController.h */,
 				85E5AC542C262272004660EA /* CDHomepageViewController.m */,
-				85E5AC5D2C264E04004660EA /* CDHomepageShopCell.m */,
 				85E5AC5C2C264DFD004660EA /* CDHomepageShopCell.h */,
+				85E5AC5D2C264E04004660EA /* CDHomepageShopCell.m */,
+				859FA7C22C3C3C0F0066BDC6 /* CDHomepageShopItem.h */,
+				859FA7C32C3C3C150066BDC6 /* CDHomepageShopItem.m */,
 			);
 			path = Homepage;
 			sourceTree = "<group>";
@@ -565,23 +729,43 @@
 			files = (
 				859985EE2C3B28E0001B395A /* CDRegisterViewController.m in Sources */,
 				85EE891F2BF6732200088D53 /* CDNetworkManager.m in Sources */,
+				859FA7EA2C3C3D710066BDC6 /* CDShopDetailsHeaderView.m in Sources */,
 				85E5AC462C260FC4004660EA /* CDLoginViewController.m in Sources */,
+				859FA7EC2C3C3D710066BDC6 /* CDShopDetailsTableViewCell.m in Sources */,
 				85E5AC5B2C264572004660EA /* CDProfileFunctionCell.m in Sources */,
 				85E5AC492C2612E9004660EA /* UIColor+Helper.m in Sources */,
+				859FA7C42C3C3C150066BDC6 /* CDHomepageShopItem.m in Sources */,
+				859FA8092C3C47E00066BDC6 /* CDMenuManagementViewController.m in Sources */,
 				85E5AC512C262206004660EA /* CDProfileViewController.m in Sources */,
+				859FA8072C3C47E00066BDC6 /* CDMerchantBaseViewController.m in Sources */,
+				859FA7E92C3C3D710066BDC6 /* CDSubmitOrderPayView.m in Sources */,
+				859FA7E72C3C3D710066BDC6 /* CDShoppingCartViewCell.m in Sources */,
 				855212822BF3CA0A003557AF /* ViewController.m in Sources */,
+				859FA7EB2C3C3D710066BDC6 /* CDSubmitOrderHeaderView.m in Sources */,
+				859FA8022C3C47E00066BDC6 /* CDMenuManagementTableViewCell.m in Sources */,
 				8552127C2BF3CA0A003557AF /* AppDelegate.m in Sources */,
+				859FA8082C3C47E00066BDC6 /* CDOrderDetailsViewController.m in Sources */,
 				859FA7B62C3BD5700066BDC6 /* CDLoadingView.m in Sources */,
+				859FA7E82C3C3D710066BDC6 /* CDShoppingCartView.m in Sources */,
 				855212B82BF3CBCF003557AF /* UIView+Helper.m in Sources */,
 				85E5AC4D2C2620B0004660EA /* CDMainViewController.m in Sources */,
+				859FA7D12C3C3D2A0066BDC6 /* CDSubmitOrderViewController.m in Sources */,
+				859FA7D02C3C3D2A0066BDC6 /* CDShopDetailsViewController.m in Sources */,
 				855212B52BF3CB80003557AF /* CDCommonUtils.m in Sources */,
 				85E5AC582C262C29004660EA /* CDMainTabBarController.m in Sources */,
 				859FA7B32C3B2C040066BDC6 /* CDToast.m in Sources */,
+				859FA8042C3C47E00066BDC6 /* CDOrderModel.m in Sources */,
 				85E5AC552C262272004660EA /* CDHomepageViewController.m in Sources */,
+				859FA8032C3C47E00066BDC6 /* CDOrderTableViewCell.m in Sources */,
 				8552128D2BF3CA0B003557AF /* main.m in Sources */,
 				8552127F2BF3CA0A003557AF /* SceneDelegate.m in Sources */,
+				859FA7EE2C3C3D710066BDC6 /* CDSubmitOrderFooterView.m in Sources */,
 				85E5AC5E2C264E04004660EA /* CDHomepageShopCell.m in Sources */,
+				859FA8062C3C47E00066BDC6 /* CDOrderViewController.m in Sources */,
 				859FA7B02C3B2BE80066BDC6 /* CDNavigationBar.m in Sources */,
+				859FA7D52C3C3D3C0066BDC6 /* CDShopDetailsModel.m in Sources */,
+				859FA8052C3C47E00066BDC6 /* CDMenuManagementModel.m in Sources */,
+				859FA7ED2C3C3D710066BDC6 /* CDSubmitOrderTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

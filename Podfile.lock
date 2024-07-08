@@ -29,34 +29,48 @@ PODS:
   - BlocksKit/UIKit (2.2.5):
     - BlocksKit/Core
     - BlocksKit/DynamicDelegate
+  - IQKeyboardManager (6.5.18)
   - Masonry (1.1.0)
   - SDWebImage (5.19.1):
     - SDWebImage/Core (= 5.19.1)
   - SDWebImage/Core (5.19.1)
+  - SVProgressHUD (2.3.1):
+    - SVProgressHUD/Core (= 2.3.1)
+  - SVProgressHUD/Core (2.3.1)
   - WechatOpenSDK-XCFramework (2.0.4)
+  - YNPageViewController (0.2.6)
 
 DEPENDENCIES:
   - AFNetworking
   - BlocksKit
+  - IQKeyboardManager
   - Masonry
   - SDWebImage (~> 5.0)
+  - SVProgressHUD
   - WechatOpenSDK-XCFramework
+  - YNPageViewController
 
 SPEC REPOS:
   trunk:
     - AFNetworking
     - BlocksKit
+    - IQKeyboardManager
     - Masonry
     - SDWebImage
+    - SVProgressHUD
     - WechatOpenSDK-XCFramework
+    - YNPageViewController
 
 SPEC CHECKSUMS:
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
   BlocksKit: 8639b2848dd51c35c957af4d9fbdc7a769a1fc12
+  IQKeyboardManager: 67f92bb29b650c094c40bd11c0545b47bdd25c5b
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SDWebImage: 40b0b4053e36c660a764958bff99eed16610acbb
+  SVProgressHUD: 4837c74bdfe2e51e8821c397825996a8d7de6e22
   WechatOpenSDK-XCFramework: 36fb2bea0754266c17184adf4963d7e6ff98b69f
+  YNPageViewController: 33040d429adf0b415d4449ffeec848d8339934ea
 
-PODFILE CHECKSUM: 751d71758b0ac6efe957e7735d7e04c65077ae9b
+PODFILE CHECKSUM: 8b8f039f9189bff93e0597b41c6ffce255458069
 
 COCOAPODS: 1.13.0

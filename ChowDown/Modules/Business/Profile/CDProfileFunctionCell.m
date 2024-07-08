@@ -32,7 +32,13 @@
 
 - (void)setItem:(CDProfileFunctionItem *)item {
     _item = item;
-    [self.iconView sd_setImageWithURL:[NSURL URLWithString:item.iconUrl]];
+    if (item.iconName.length > 0) {
+        self.iconView.image = [UIImage imageNamed:item.iconName];
+    } else if (item.iconUrl.length > 0) {
+        [self.iconView sd_setImageWithURL:[NSURL URLWithString:item.iconUrl]];
+    } else {
+        self.iconView.image = nil;
+    }
     self.functionLabel.text = item.functionTitle;
     [self setNeedsLayout];
 }

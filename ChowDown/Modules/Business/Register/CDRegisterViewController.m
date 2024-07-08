@@ -143,7 +143,7 @@
     self.registerButton.titleLabel.font = [UIFont systemFontOfSize:18 weight:UIFontWeightRegular];
     [self.registerButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [self.registerButton setTitle:@"Register" forState:UIControlStateNormal];
-    self.registerButton.backgroundColor = HEXCOLOR(0xFFC600);
+    self.registerButton.backgroundColor = THEME_COLOR;
     self.registerButton.layer.cornerRadius = 8.0;
     WEAK_REF(self);
     [self.registerButton bk_addEventHandler:^(id sender) {

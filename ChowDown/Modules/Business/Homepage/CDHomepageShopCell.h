@@ -6,16 +6,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CDHomepageShopItem.h"
 
 NS_ASSUME_NONNULL_BEGIN
-
-@interface CDHomepageShopItem : NSObject
-
-@property (nonatomic, strong) NSString *shopAvatarUrl;
-@property (nonatomic, strong) NSString *shopName;
-@property (nonatomic, strong) NSString *shopDescription;
-
-@end
 
 @interface CDHomepageShopCell : UICollectionViewCell
 

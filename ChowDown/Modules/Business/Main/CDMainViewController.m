@@ -61,14 +61,14 @@
         NSFontAttributeName:[UIFont systemFontOfSize:12 weight:UIFontWeightSemibold],
     };
     itemAppearance.normal.iconColor = [UIColor grayColor];
-    itemAppearance.selected.iconColor = HEXCOLOR(0xFFC600);
+    itemAppearance.selected.iconColor = THEME_COLOR;
     itemAppearance.normal.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor grayColor]};
-    itemAppearance.selected.titleTextAttributes = @{NSForegroundColorAttributeName: HEXCOLOR(0xFFC600)};
+    itemAppearance.selected.titleTextAttributes = @{NSForegroundColorAttributeName: THEME_COLOR};
     appearance.inlineLayoutAppearance = itemAppearance;
     appearance.stackedLayoutAppearance = itemAppearance;
     self.bottomTabBarController.tabBar.standardAppearance = appearance;
     self.bottomTabBarController.tabBar.scrollEdgeAppearance = appearance;
-    self.bottomTabBarController.additionalSafeAreaInsets = UIEdgeInsetsMake(0, 0, [CDCommonUtils safeAreaInsets].bottom, 0);
+    [self addChildViewController:self.bottomTabBarController];
     [self.view addSubview:self.bottomTabBarController.view];
 }
 

@@ -40,7 +40,7 @@
     self.titleLabel = [[UILabel alloc] init];
     self.titleLabel.text = self.title;
     self.titleLabel.textAlignment = NSTextAlignmentCenter;
-    self.titleLabel.font = [UIFont boldSystemFontOfSize:22.0];
+    self.titleLabel.font = [UIFont boldSystemFontOfSize:18.0];
     [self addSubview:self.titleLabel];
     [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.mas_equalTo(self);

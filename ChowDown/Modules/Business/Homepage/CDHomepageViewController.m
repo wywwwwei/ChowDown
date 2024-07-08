@@ -7,6 +7,7 @@
 
 #import "CDHomepageViewController.h"
 #import "CDHomepageShopCell.h"
+#import "CDShopDetailsViewController.h"
 #import <Masonry/Masonry.h>
 #import <SDWebImage/UIImageView+WebCache.h>
 
@@ -19,6 +20,7 @@
 
 @property (nonatomic, strong) UICollectionView *shopCollectionView;
 @property (nonatomic, strong) NSArray<CDHomepageShopItem *> *shopItems;
+
 @end
 
 @implementation CDHomepageViewController
@@ -82,7 +84,7 @@
     
     self.searchButton = [UIButton buttonWithType:UIButtonTypeCustom];
     self.searchButton.layer.cornerRadius = 15.f;
-    self.searchButton.backgroundColor = HEXCOLOR(0xFFC600);
+    self.searchButton.backgroundColor = THEME_COLOR;
     self.searchButton.titleLabel.font = [UIFont systemFontOfSize:13 weight:UIFontWeightRegular];
     [self.searchButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [self.searchButton setTitle:@"Search" forState:UIControlStateNormal];
@@ -137,6 +139,11 @@
     CDHomepageShopCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass(CDHomepageShopCell.class) forIndexPath:indexPath];
     cell.item = self.shopItems[indexPath.row];
     return cell;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    CDShopDetailsViewController *controller = [[CDShopDetailsViewController alloc] init];
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 @end

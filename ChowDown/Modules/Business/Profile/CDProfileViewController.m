@@ -7,6 +7,7 @@
 
 #import "CDProfileViewController.h"
 #import "CDProfileFunctionCell.h"
+#import "CDMerchantBaseViewController.h"
 #import <Masonry/Masonry.h>
 #import <SDWebImage/UIImageView+WebCache.h>
 
@@ -40,15 +41,31 @@
     }
     NSMutableArray *items = [NSMutableArray array];
     CDProfileFunctionItem *addressItem = [[CDProfileFunctionItem alloc] init];
-    addressItem.iconUrl = @"https://img.icons8.com/?size=100&id=53383&format=png";
-    addressItem.functionTitle = @"地址管理";
+    addressItem.iconName = @"address";
+    addressItem.functionTitle = @"Address";
     [items addObject:addressItem];
     
     CDProfileFunctionItem *orderItem = [[CDProfileFunctionItem alloc] init];
-    orderItem.iconUrl = @"https://img.icons8.com/?size=100&id=4255&format=png";
-    orderItem.functionTitle = @"历史订单";
+    orderItem.iconName = @"orders";
+    orderItem.functionTitle = @"Orders";
     [items addObject:orderItem];
-    
+
+    CDProfileFunctionItem *merchantItem = [[CDProfileFunctionItem alloc] init];
+    merchantItem.iconName = @"merchant";
+    merchantItem.functionTitle = @"Merchant";
+    WEAK_REF(self);
+    merchantItem.clickHandler = ^{
+        STRONG_REF(self);
+        CDMerchantBaseViewController *vc = [[CDMerchantBaseViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    };
+    [items addObject:merchantItem];
+
+    CDProfileFunctionItem *editItem = [[CDProfileFunctionItem alloc] init];
+    editItem.iconName = @"edit_profile";
+    editItem.functionTitle = @"Edit Profile";
+    [items addObject:editItem];
+
     self.functionItems = items;
 }
 
@@ -118,6 +135,15 @@
     CDProfileFunctionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass(CDProfileFunctionCell.class) forIndexPath:indexPath];
     cell.item = self.functionItems[indexPath.row];
     return cell;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.row < self.functionItems.count) {
+        CDProfileFunctionItem *item = self.functionItems[indexPath.row];
+        if (item.clickHandler) {
+            item.clickHandler();
+        }
+    }
 }
 
 @end
