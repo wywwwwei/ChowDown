@@ -8,6 +8,7 @@
 #import "CDProfileViewController.h"
 #import "CDProfileFunctionCell.h"
 #import "CDMerchantBaseViewController.h"
+#import "CDLocationSelectViewController.h"
 #import <Masonry/Masonry.h>
 #import <SDWebImage/UIImageView+WebCache.h>
 
@@ -43,6 +44,12 @@
     CDProfileFunctionItem *addressItem = [[CDProfileFunctionItem alloc] init];
     addressItem.iconName = @"address";
     addressItem.functionTitle = @"Address";
+    WEAK_REF(self);
+    addressItem.clickHandler = ^{
+        STRONG_REF(self);
+        CDLocationSelectViewController *vc = [[CDLocationSelectViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    };
     [items addObject:addressItem];
     
     CDProfileFunctionItem *orderItem = [[CDProfileFunctionItem alloc] init];
@@ -53,7 +60,6 @@
     CDProfileFunctionItem *merchantItem = [[CDProfileFunctionItem alloc] init];
     merchantItem.iconName = @"merchant";
     merchantItem.functionTitle = @"Merchant";
-    WEAK_REF(self);
     merchantItem.clickHandler = ^{
         STRONG_REF(self);
         CDMerchantBaseViewController *vc = [[CDMerchantBaseViewController alloc] init];

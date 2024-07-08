@@ -21,6 +21,10 @@
 		<string>weixinULAPI</string>
 		<string>weixinURLParamsAPI</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>可以使用您的位置吗</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>可以使用您的位置吗</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

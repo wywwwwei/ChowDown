@@ -61,7 +61,7 @@
     } forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:self.backButton];
     [self.backButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.width.height.mas_equalTo(25);
+        make.width.height.mas_equalTo(24);
         make.left.mas_equalTo(20);
         make.bottom.mas_equalTo(-10);
     }];

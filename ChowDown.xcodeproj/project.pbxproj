@@ -43,6 +43,8 @@
 		859FA8072C3C47E00066BDC6 /* CDMerchantBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 859FA7FB2C3C47E00066BDC6 /* CDMerchantBaseViewController.m */; };
 		859FA8082C3C47E00066BDC6 /* CDOrderDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 859FA7FC2C3C47E00066BDC6 /* CDOrderDetailsViewController.m */; };
 		859FA8092C3C47E00066BDC6 /* CDMenuManagementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 859FA7FD2C3C47E00066BDC6 /* CDMenuManagementViewController.m */; };
+		859FA80D2C3C5AF30066BDC6 /* CDLocationSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 859FA80C2C3C5AF30066BDC6 /* CDLocationSelectViewController.m */; };
+		859FA8102C3C6AD20066BDC6 /* CDLocationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 859FA80F2C3C6AD20066BDC6 /* CDLocationModel.m */; };
 		85E5AC462C260FC4004660EA /* CDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E5AC452C260FC4004660EA /* CDLoginViewController.m */; };
 		85E5AC492C2612E9004660EA /* UIColor+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E5AC482C2612E9004660EA /* UIColor+Helper.m */; };
 		85E5AC4D2C2620B0004660EA /* CDMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E5AC4C2C2620B0004660EA /* CDMainViewController.m */; };
@@ -149,6 +151,10 @@
 		859FA7FF2C3C47E00066BDC6 /* CDOrderDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDOrderDetailsViewController.h; sourceTree = "<group>"; };
 		859FA8002C3C47E00066BDC6 /* CDMerchantBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDMerchantBaseViewController.h; sourceTree = "<group>"; };
 		859FA8012C3C47E00066BDC6 /* CDMenuManagementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDMenuManagementViewController.h; sourceTree = "<group>"; };
+		859FA80B2C3C5AEC0066BDC6 /* CDLocationSelectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDLocationSelectViewController.h; sourceTree = "<group>"; };
+		859FA80C2C3C5AF30066BDC6 /* CDLocationSelectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDLocationSelectViewController.m; sourceTree = "<group>"; };
+		859FA80E2C3C6AC90066BDC6 /* CDLocationModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDLocationModel.h; sourceTree = "<group>"; };
+		859FA80F2C3C6AD20066BDC6 /* CDLocationModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDLocationModel.m; sourceTree = "<group>"; };
 		85E5AC442C260FBD004660EA /* CDLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDLoginViewController.h; sourceTree = "<group>"; };
 		85E5AC452C260FC4004660EA /* CDLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDLoginViewController.m; sourceTree = "<group>"; };
 		85E5AC472C2612E9004660EA /* UIColor+Helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Helper.h"; sourceTree = "<group>"; };
@@ -422,9 +428,21 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		859FA80A2C3C5ADB0066BDC6 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				859FA80B2C3C5AEC0066BDC6 /* CDLocationSelectViewController.h */,
+				859FA80C2C3C5AF30066BDC6 /* CDLocationSelectViewController.m */,
+				859FA80E2C3C6AC90066BDC6 /* CDLocationModel.h */,
+				859FA80F2C3C6AD20066BDC6 /* CDLocationModel.m */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
 		85E5AC422C260FA6004660EA /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				859FA80A2C3C5ADB0066BDC6 /* Location */,
 				859FA7B82C3C38F90066BDC6 /* Shop */,
 				859FA7B72C3C38DD0066BDC6 /* Merchant */,
 				859985EB2C3B28C3001B395A /* Register */,
@@ -731,6 +749,8 @@
 				85EE891F2BF6732200088D53 /* CDNetworkManager.m in Sources */,
 				859FA7EA2C3C3D710066BDC6 /* CDShopDetailsHeaderView.m in Sources */,
 				85E5AC462C260FC4004660EA /* CDLoginViewController.m in Sources */,
+				859FA80D2C3C5AF30066BDC6 /* CDLocationSelectViewController.m in Sources */,
+				859FA8102C3C6AD20066BDC6 /* CDLocationModel.m in Sources */,
 				859FA7EC2C3C3D710066BDC6 /* CDShopDetailsTableViewCell.m in Sources */,
 				85E5AC5B2C264572004660EA /* CDProfileFunctionCell.m in Sources */,
 				85E5AC492C2612E9004660EA /* UIColor+Helper.m in Sources */,
