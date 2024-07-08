@@ -6,8 +6,9 @@
 //
 
 #import "AppDelegate.h"
+#import <WXApi.h>
 
-@interface AppDelegate ()
+@interface AppDelegate () <WXApiDelegate>
 
 @end
 
@@ -15,10 +16,15 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    //向微信注册
+    [WXApi registerApp:@"wx8e5983d39e3bace1" universalLink:@"https://www.baidu.com"];
     // Override point for customization after application launch.
     return YES;
 }
 
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+    return [WXApi handleOpenURL:url delegate:(id<WXApiDelegate>)self];
+}
 
 #pragma mark - UISceneSession lifecycle
 

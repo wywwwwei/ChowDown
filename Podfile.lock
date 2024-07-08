@@ -33,12 +33,14 @@ PODS:
   - SDWebImage (5.19.1):
     - SDWebImage/Core (= 5.19.1)
   - SDWebImage/Core (5.19.1)
+  - WechatOpenSDK-XCFramework (2.0.4)
 
 DEPENDENCIES:
   - AFNetworking
   - BlocksKit
   - Masonry
   - SDWebImage (~> 5.0)
+  - WechatOpenSDK-XCFramework
 
 SPEC REPOS:
   trunk:
@@ -46,13 +48,15 @@ SPEC REPOS:
     - BlocksKit
     - Masonry
     - SDWebImage
+    - WechatOpenSDK-XCFramework
 
 SPEC CHECKSUMS:
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
   BlocksKit: 8639b2848dd51c35c957af4d9fbdc7a769a1fc12
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SDWebImage: 40b0b4053e36c660a764958bff99eed16610acbb
+  WechatOpenSDK-XCFramework: 36fb2bea0754266c17184adf4963d7e6ff98b69f
 
-PODFILE CHECKSUM: 5ff152df2ad853fdefe8bf94b1db709ce70ab429
+PODFILE CHECKSUM: 751d71758b0ac6efe957e7735d7e04c65077ae9b
 
 COCOAPODS: 1.13.0

@@ -10,6 +10,7 @@ target 'ChowDown' do
   pod 'BlocksKit'
   pod 'AFNetworking'
   pod 'SDWebImage', '~> 5.0'
+  pod 'WechatOpenSDK-XCFramework'
 
   target 'ChowDownTests' do
     inherit! :search_paths

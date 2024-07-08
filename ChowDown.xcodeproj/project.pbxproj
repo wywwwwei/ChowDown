@@ -19,6 +19,10 @@
 		855212A32BF3CA0B003557AF /* ChowDownUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 855212A22BF3CA0B003557AF /* ChowDownUITestsLaunchTests.m */; };
 		855212B52BF3CB80003557AF /* CDCommonUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 855212B42BF3CB80003557AF /* CDCommonUtils.m */; };
 		855212B82BF3CBCF003557AF /* UIView+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 855212B72BF3CBCF003557AF /* UIView+Helper.m */; };
+		859985EE2C3B28E0001B395A /* CDRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 859985ED2C3B28E0001B395A /* CDRegisterViewController.m */; };
+		859FA7B02C3B2BE80066BDC6 /* CDNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 859FA7AF2C3B2BE80066BDC6 /* CDNavigationBar.m */; };
+		859FA7B32C3B2C040066BDC6 /* CDToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 859FA7B22C3B2C040066BDC6 /* CDToast.m */; };
+		859FA7B62C3BD5700066BDC6 /* CDLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 859FA7B52C3BD5700066BDC6 /* CDLoadingView.m */; };
 		85E5AC462C260FC4004660EA /* CDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E5AC452C260FC4004660EA /* CDLoginViewController.m */; };
 		85E5AC492C2612E9004660EA /* UIColor+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E5AC482C2612E9004660EA /* UIColor+Helper.m */; };
 		85E5AC4D2C2620B0004660EA /* CDMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E5AC4C2C2620B0004660EA /* CDMainViewController.m */; };
@@ -77,6 +81,14 @@
 		855212B42BF3CB80003557AF /* CDCommonUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDCommonUtils.m; sourceTree = "<group>"; };
 		855212B62BF3CBCF003557AF /* UIView+Helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Helper.h"; sourceTree = "<group>"; };
 		855212B72BF3CBCF003557AF /* UIView+Helper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Helper.m"; sourceTree = "<group>"; };
+		859985EC2C3B28DA001B395A /* CDRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDRegisterViewController.h; sourceTree = "<group>"; };
+		859985ED2C3B28E0001B395A /* CDRegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDRegisterViewController.m; sourceTree = "<group>"; };
+		859FA7AE2C3B2BDF0066BDC6 /* CDNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDNavigationBar.h; sourceTree = "<group>"; };
+		859FA7AF2C3B2BE80066BDC6 /* CDNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDNavigationBar.m; sourceTree = "<group>"; };
+		859FA7B12C3B2BFC0066BDC6 /* CDToast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDToast.h; sourceTree = "<group>"; };
+		859FA7B22C3B2C040066BDC6 /* CDToast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDToast.m; sourceTree = "<group>"; };
+		859FA7B42C3BD56A0066BDC6 /* CDLoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDLoadingView.h; sourceTree = "<group>"; };
+		859FA7B52C3BD5700066BDC6 /* CDLoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDLoadingView.m; sourceTree = "<group>"; };
 		85E5AC442C260FBD004660EA /* CDLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDLoginViewController.h; sourceTree = "<group>"; };
 		85E5AC452C260FC4004660EA /* CDLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDLoginViewController.m; sourceTree = "<group>"; };
 		85E5AC472C2612E9004660EA /* UIColor+Helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Helper.h"; sourceTree = "<group>"; };
@@ -231,13 +243,29 @@
 				855212B72BF3CBCF003557AF /* UIView+Helper.m */,
 				85E5AC472C2612E9004660EA /* UIColor+Helper.h */,
 				85E5AC482C2612E9004660EA /* UIColor+Helper.m */,
+				859FA7AE2C3B2BDF0066BDC6 /* CDNavigationBar.h */,
+				859FA7AF2C3B2BE80066BDC6 /* CDNavigationBar.m */,
+				859FA7B12C3B2BFC0066BDC6 /* CDToast.h */,
+				859FA7B22C3B2C040066BDC6 /* CDToast.m */,
+				859FA7B42C3BD56A0066BDC6 /* CDLoadingView.h */,
+				859FA7B52C3BD5700066BDC6 /* CDLoadingView.m */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		859985EB2C3B28C3001B395A /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				859985EC2C3B28DA001B395A /* CDRegisterViewController.h */,
+				859985ED2C3B28E0001B395A /* CDRegisterViewController.m */,
+			);
+			path = Register;
 			sourceTree = "<group>";
 		};
 		85E5AC422C260FA6004660EA /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				859985EB2C3B28C3001B395A /* Register */,
 				85E5AC522C26225B004660EA /* Homepage */,
 				85E5AC4E2C2621EA004660EA /* Profile */,
 				85E5AC4A2C262094004660EA /* Main */,
@@ -535,6 +563,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				859985EE2C3B28E0001B395A /* CDRegisterViewController.m in Sources */,
 				85EE891F2BF6732200088D53 /* CDNetworkManager.m in Sources */,
 				85E5AC462C260FC4004660EA /* CDLoginViewController.m in Sources */,
 				85E5AC5B2C264572004660EA /* CDProfileFunctionCell.m in Sources */,
@@ -542,14 +571,17 @@
 				85E5AC512C262206004660EA /* CDProfileViewController.m in Sources */,
 				855212822BF3CA0A003557AF /* ViewController.m in Sources */,
 				8552127C2BF3CA0A003557AF /* AppDelegate.m in Sources */,
+				859FA7B62C3BD5700066BDC6 /* CDLoadingView.m in Sources */,
 				855212B82BF3CBCF003557AF /* UIView+Helper.m in Sources */,
 				85E5AC4D2C2620B0004660EA /* CDMainViewController.m in Sources */,
 				855212B52BF3CB80003557AF /* CDCommonUtils.m in Sources */,
 				85E5AC582C262C29004660EA /* CDMainTabBarController.m in Sources */,
+				859FA7B32C3B2C040066BDC6 /* CDToast.m in Sources */,
 				85E5AC552C262272004660EA /* CDHomepageViewController.m in Sources */,
 				8552128D2BF3CA0B003557AF /* main.m in Sources */,
 				8552127F2BF3CA0A003557AF /* SceneDelegate.m in Sources */,
 				85E5AC5E2C264E04004660EA /* CDHomepageShopCell.m in Sources */,
+				859FA7B02C3B2BE80066BDC6 /* CDNavigationBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -729,6 +761,36 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"WechatOpenSDK\"",
+					"-l\"c++\"",
+					"-l\"sqlite3.0\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"BlocksKit\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"\"MessageUI\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"WebKit\"",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = hku.cs7705.project.ChowDown;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -758,6 +820,36 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"WechatOpenSDK\"",
+					"-l\"c++\"",
+					"-l\"sqlite3.0\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"BlocksKit\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"\"MessageUI\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"WebKit\"",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = hku.cs7705.project.ChowDown;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

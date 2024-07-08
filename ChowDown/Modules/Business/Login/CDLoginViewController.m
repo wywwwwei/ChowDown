@@ -8,7 +8,11 @@
 #import "CDLoginViewController.h"
 #import <Masonry/Masonry.h>
 #import <BlocksKit/UIControl+BlocksKit.h>
+#import <BlocksKit/UIGestureRecognizer+BlocksKit.h>
 #import "CDMainViewController.h"
+#import "CDRegisterViewController.h"
+#import "CDLoadingView.h"
+#import <WXApi.h>
 
 @interface CDLoginViewController ()
 
@@ -168,11 +172,28 @@
     self.wechatLoginButton = [UIButton buttonWithType:UIButtonTypeCustom];
     self.wechatLoginButton.backgroundColor = [UIColor clearColor];
     [self.wechatLoginButton setImage:[UIImage imageNamed:@"wechat"] forState:UIControlStateNormal];
+    WEAK_REF(self);
+    [self.wechatLoginButton bk_addEventHandler:^(id sender) {
+        STRONG_REF(self);
+        [self sendAuthRequest];
+    } forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.wechatLoginButton];
     [self.wechatLoginButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.height.mas_equalTo(32);
         make.centerX.mas_equalTo(self.view);
         make.top.mas_equalTo(self.thirdHintLabel.mas_bottom).offset(30);
+    }];
+}
+
+-(void)sendAuthRequest
+{
+    //构造SendAuthReq结构体
+    SendAuthReq* req = [[SendAuthReq alloc] init];
+    req.scope = @"snsapi_userinfo"; // 只能填 snsapi_userinfo
+    req.state = @"123";
+    //第三方向微信终端发送一个SendAuthReq消息结构
+    [WXApi sendReq:req completion:^(BOOL success) {
+        
     }];
 }
 
@@ -203,6 +224,24 @@
         make.centerX.mas_equalTo(self.view);
         make.top.mas_equalTo(self.wechatLoginButton.mas_bottom).offset(30);
     }];
+    
+    WEAK_REF(self);
+    UITapGestureRecognizer *gesture = [UITapGestureRecognizer bk_recognizerWithHandler:^(UIGestureRecognizer *sender, UIGestureRecognizerState state, CGPoint location) {
+        STRONG_REF(self);
+        CDRegisterViewController *registerVC = [[CDRegisterViewController alloc] init];
+        [self.navigationController pushViewController:registerVC animated:YES];
+    }];
+    self.createAccountLabel.userInteractionEnabled = YES;
+    [self.createAccountLabel addGestureRecognizer:gesture];
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    UITouch *touch = touches.anyObject;
+    if (touch.view != self.passwordField && self.passwordField.isEditing) {
+        [self.passwordField resignFirstResponder];
+    } else if (touch.view != self.emailField && self.emailField.isEditing) {
+        [self.emailField resignFirstResponder];
+    }
+    [super touchesBegan:touches withEvent:event];
+}
 @end
