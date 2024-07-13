@@ -9,6 +9,9 @@
 #import "CDProfileFunctionCell.h"
 #import "CDMerchantBaseViewController.h"
 #import "CDLocationSelectViewController.h"
+#import "CDProfileEditViewController.h"
+#import "CDSettingsViewController.h"
+#import "CDUser.h"
 #import <Masonry/Masonry.h>
 #import <SDWebImage/UIImageView+WebCache.h>
 
@@ -21,6 +24,7 @@
 @property (nonatomic, strong) UIView *infoView;
 @property (nonatomic, strong) UIImageView *avatarView;
 @property (nonatomic, strong) UILabel *nicknameLabel;
+@property (nonatomic, strong) UILabel *introductionLabel;
 
 @property (nonatomic, strong) UICollectionView *functionCollectionView;
 @property (nonatomic, strong) NSArray<CDProfileFunctionItem *> *functionItems;
@@ -34,6 +38,17 @@
     [self setupFunctionItems];
     [self setupInfoView];
     [self setupFunctionCollectionView];
+    [self registerNotifications];
+}
+
+- (void)registerNotifications {
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onUserProfileChange:) name:CDUserProfileUpdateNotification object:nil];
+}
+
+- (void)onUserProfileChange:(NSNotification *)notification {
+    [self.avatarView sd_setImageWithURL:[NSURL URLWithString:[CDUser currentUser].avatarUrl]];
+    self.nicknameLabel.text = [CDUser currentUser].nickname;
+    self.introductionLabel.text = [CDUser currentUser].introduction;
 }
 
 - (void)setupFunctionItems {
@@ -70,8 +85,23 @@
     CDProfileFunctionItem *editItem = [[CDProfileFunctionItem alloc] init];
     editItem.iconName = @"edit_profile";
     editItem.functionTitle = @"Edit Profile";
+    editItem.clickHandler = ^{
+        STRONG_REF(self);
+        CDProfileEditViewController *vc = [[CDProfileEditViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    };
     [items addObject:editItem];
 
+    CDProfileFunctionItem *settingsItem = [[CDProfileFunctionItem alloc] init];
+    settingsItem.iconName = @"settings";
+    settingsItem.functionTitle = @"Settings";
+    settingsItem.clickHandler = ^{
+        STRONG_REF(self);
+        CDSettingsViewController *vc = [[CDSettingsViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    };
+    [items addObject:settingsItem];
+    
     self.functionItems = items;
 }
 
@@ -83,7 +113,7 @@
     
     self.avatarView = [[UIImageView alloc] init];
     self.avatarView.contentMode = UIViewContentModeScaleAspectFill;
-    [self.avatarView sd_setImageWithURL:[NSURL URLWithString:@"https://media.newyorker.com/photos/5909743dc14b3c606c108588/master/pass/160229_r27717.jpg"]];
+    [self.avatarView sd_setImageWithURL:[NSURL URLWithString:[CDUser currentUser].avatarUrl]];
     self.avatarView.layer.cornerRadius = 64.0f;
     self.avatarView.layer.masksToBounds = YES;
     [self.infoView addSubview:self.avatarView];
@@ -94,15 +124,29 @@
     }];
     
     self.nicknameLabel = [[UILabel alloc] init];
-    self.nicknameLabel.font = [UIFont systemFontOfSize:20 weight:UIFontWeightBold];
+    self.nicknameLabel.font = [UIFont systemFontOfSize:22 weight:UIFontWeightBold];
     self.nicknameLabel.textColor = [UIColor blackColor];
-    self.nicknameLabel.text = @"TestAccount";
+    self.nicknameLabel.text = [CDUser currentUser].nickname;
     [self.infoView addSubview:self.nicknameLabel];
     [self.nicknameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(self.avatarView.mas_right).offset(40);
-        make.centerY.mas_equalTo(self.avatarView);
+        make.left.mas_equalTo(self.avatarView.mas_right).offset(30);
+        make.bottom.mas_equalTo(self.avatarView.mas_centerY).offset(-10);
     }];
     
+    self.introductionLabel = [[UILabel alloc] init];
+    self.introductionLabel.font = [UIFont systemFontOfSize:13 weight:UIFontWeightRegular];
+    self.introductionLabel.textColor = [[UIColor blackColor] colorWithAlphaComponent:0.5];
+    if ([CDUser currentUser].introduction.length <= 0) {
+        self.introductionLabel.text = @"No introduction yet.";
+    } else {
+        self.introductionLabel.text = [CDUser currentUser].introduction;
+    }
+    [self.infoView addSubview:self.introductionLabel];
+    [self.introductionLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(self.nicknameLabel.mas_left);
+        make.top.mas_equalTo(self.avatarView.mas_centerY).offset(10);
+    }];
+
     [self.view addSubview:self.infoView];
     [self.infoView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(100);

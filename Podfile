@@ -14,6 +14,7 @@ target 'ChowDown' do
   pod 'IQKeyboardManager'
   pod 'SVProgressHUD'
   pod 'YNPageViewController'
+  pod 'MJExtension'
 
   target 'ChowDownTests' do
     inherit! :search_paths

@@ -13,11 +13,11 @@
 + (void)showToastTitle:(NSString *)title duration:(NSTimeInterval)duration {
     UILabel *label = [[UILabel alloc] init];
     label.text = title;
-    label.textColor = [[UIColor blackColor] colorWithAlphaComponent:0.7];
+    label.textColor = [[UIColor whiteColor] colorWithAlphaComponent:0.7];
     
     UIView *toastView = [[UIView alloc] init];
     toastView.layer.cornerRadius = 14.f;
-    toastView.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.7];
+    toastView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.7];
     [toastView addSubview:label];
     [label mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.mas_equalTo(toastView);

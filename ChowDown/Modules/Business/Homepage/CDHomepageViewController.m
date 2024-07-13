@@ -39,23 +39,47 @@
     }
     NSMutableArray *items = [NSMutableArray array];
     CDHomepageShopItem *item1 = [[CDHomepageShopItem alloc] init];
-    item1.shopName = @"食光Cake蛋糕店";
-    item1.shopDescription = @"现做蛋糕";
-    item1.shopAvatarUrl = @"https://img.zcool.cn/community/01f23558f864d2a8012049ef325ff0.jpg?imageMogr2/auto-orient/thumbnail/1280x%3e/sharpen/0.5/quality/100/format/webp";
+    item1.shopName = @"McDonald's(Hill)";
+    item1.shopDescription = @"Western Fast Food";
+    item1.shopAvatarUrl = @"https://raw.githubusercontent.com/wywwwwei/TO-DO/master/store/3471720864563.jpg";
     [items addObject:item1];
     
     CDHomepageShopItem *item2 = [[CDHomepageShopItem alloc] init];
-    item2.shopName = @"喜茶";
-    item2.shopDescription = @"来杯喜茶，喜悦发生";
-    item2.shopAvatarUrl = @"https://tradetm.zbjimg.com/tm/7f/81/b6/32785457.jpg";
+    item2.shopName = @"Pizza Hut(Hansen Court)";
+    item2.shopDescription = @"Western Fast Food";
+    item2.shopAvatarUrl = @"https://raw.githubusercontent.com/wywwwwei/TO-DO/master/store/3461720864562.jpg";
     [items addObject:item2];
     
     CDHomepageShopItem *item3 = [[CDHomepageShopItem alloc] init];
-    item3.shopName = @"麦当劳";
-    item3.shopDescription = @"高分店铺";
-    item3.shopAvatarUrl = @"https://x0.ifengimg.com/res/2020/0593E72D7004F5472A2609DB6B3594ACF169AE0B_size3_w1000_h600.png";
+    item3.shopName = @"Barchua House";
+    item3.shopDescription = @"Chinese Fast Food";
+    item3.shopAvatarUrl = @"https://raw.githubusercontent.com/wywwwwei/TO-DO/master/store/3421720864559.jpg";
     [items addObject:item3];
+    
+    CDHomepageShopItem *item4 = [[CDHomepageShopItem alloc] init];
+    item4.shopName = @"Jollibee (Luen On Apartment)";
+    item4.shopDescription = @"Western Fast Food";
+    item4.shopAvatarUrl = @"https://raw.githubusercontent.com/wywwwwei/TO-DO/master/store/3451720864562.jpg";
+    [items addObject:item4];
+    
+    CDHomepageShopItem *item5 = [[CDHomepageShopItem alloc] init];
+    item5.shopName = @"Malacca Cuisine (Shek Tong Tsui)";
+    item5.shopDescription = @"Southeaset Asion · Malaysia";
+    item5.shopAvatarUrl = @"https://raw.githubusercontent.com/wywwwwei/TO-DO/master/store/3441720864561.jpg";
+    [items addObject:item5];
 
+    CDHomepageShopItem *item6 = [[CDHomepageShopItem alloc] init];
+    item6.shopName = @"Ba Yi Restaurant";
+    item6.shopDescription = @"Chinese Style";
+    item6.shopAvatarUrl = @"https://raw.githubusercontent.com/wywwwwei/TO-DO/master/store/3431720864560.jpg";
+    [items addObject:item6];
+    
+    CDHomepageShopItem *item7 = [[CDHomepageShopItem alloc] init];
+    item7.shopName = @"Uncle Korean";
+    item7.shopDescription = @"Japanese and Korean";
+    item7.shopAvatarUrl = @"https://raw.githubusercontent.com/wywwwwei/TO-DO/master/store/3481720864946.jpg";
+    [items addObject:item7];
+    
     self.shopItems = items;
 }
 
@@ -114,6 +138,8 @@
     layout.itemSize = CGSizeMake(self.view.width - 40, 80);
     layout.minimumLineSpacing = 10.f;
     self.shopCollectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
+    self.shopCollectionView.showsVerticalScrollIndicator = NO;
+    self.shopCollectionView.showsHorizontalScrollIndicator = NO;
     self.shopCollectionView.backgroundColor = [UIColor clearColor];
     self.shopCollectionView.dataSource = self;
     self.shopCollectionView.delegate = self;

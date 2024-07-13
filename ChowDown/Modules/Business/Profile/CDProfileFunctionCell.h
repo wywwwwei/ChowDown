@@ -6,19 +6,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CDProfileFunctionItem.h"
 
 NS_ASSUME_NONNULL_BEGIN
-
-@interface CDProfileFunctionItem : NSObject
-
-@property (nonatomic, strong) NSString *functionTitle;
-
-@property (nonatomic, strong) NSString *iconName;
-@property (nonatomic, strong) NSString *iconUrl;
-
-@property (nonatomic, copy) void(^clickHandler)(void);
-
-@end
 
 @interface CDProfileFunctionCell : UICollectionViewCell
 

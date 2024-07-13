@@ -89,6 +89,8 @@
     self.emailField = [[UITextField alloc] init];
     self.emailField.placeholder = @"Enter email id";
     self.emailField.borderStyle = UITextBorderStyleRoundedRect;
+    self.emailField.autocorrectionType = UITextAutocorrectionTypeNo;
+    self.emailField.autocapitalizationType = UITextAutocapitalizationTypeNone;
     [self.view addSubview:self.emailField];
     
     [self.emailField mas_makeConstraints:^(MASConstraintMaker *make) {

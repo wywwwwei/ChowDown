@@ -19,6 +19,22 @@
 		855212A32BF3CA0B003557AF /* ChowDownUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 855212A22BF3CA0B003557AF /* ChowDownUITestsLaunchTests.m */; };
 		855212B52BF3CB80003557AF /* CDCommonUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 855212B42BF3CB80003557AF /* CDCommonUtils.m */; };
 		855212B82BF3CBCF003557AF /* UIView+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 855212B72BF3CBCF003557AF /* UIView+Helper.m */; };
+		85707F6F2C425A5000E17EBC /* CDProfileEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85707F6E2C425A5000E17EBC /* CDProfileEditViewController.m */; };
+		85707F722C425A7300E17EBC /* CDUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 85707F712C425A7300E17EBC /* CDUser.m */; };
+		85707F782C425AF100E17EBC /* CDProfileFunctionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 85707F772C425AF100E17EBC /* CDProfileFunctionItem.m */; };
+		85707F7B2C42781600E17EBC /* CDSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85707F7A2C42781600E17EBC /* CDSettingsViewController.m */; };
+		85707F7E2C427C4700E17EBC /* CDSettingsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85707F7D2C427C4700E17EBC /* CDSettingsModel.m */; };
+		85707F812C427CAD00E17EBC /* CDSettingsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85707F802C427CAD00E17EBC /* CDSettingsCell.m */; };
+		85707F8D2C42894700E17EBC /* 1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 85707F832C42894700E17EBC /* 1.jpeg */; };
+		85707F8E2C42894700E17EBC /* 9.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 85707F842C42894700E17EBC /* 9.jpeg */; };
+		85707F8F2C42894700E17EBC /* 5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 85707F852C42894700E17EBC /* 5.jpeg */; };
+		85707F902C42894700E17EBC /* 8.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 85707F862C42894700E17EBC /* 8.jpeg */; };
+		85707F912C42894700E17EBC /* 3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 85707F872C42894700E17EBC /* 3.jpeg */; };
+		85707F922C42894700E17EBC /* 4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 85707F882C42894700E17EBC /* 4.jpeg */; };
+		85707F932C42894700E17EBC /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 85707F892C42894700E17EBC /* 10.jpg */; };
+		85707F942C42894700E17EBC /* 7.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 85707F8A2C42894700E17EBC /* 7.jpeg */; };
+		85707F952C42894700E17EBC /* 6.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 85707F8B2C42894700E17EBC /* 6.jpeg */; };
+		85707F962C42894700E17EBC /* 2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 85707F8C2C42894700E17EBC /* 2.jpeg */; };
 		859985EE2C3B28E0001B395A /* CDRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 859985ED2C3B28E0001B395A /* CDRegisterViewController.m */; };
 		859FA7B02C3B2BE80066BDC6 /* CDNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 859FA7AF2C3B2BE80066BDC6 /* CDNavigationBar.m */; };
 		859FA7B32C3B2C040066BDC6 /* CDToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 859FA7B22C3B2C040066BDC6 /* CDToast.m */; };
@@ -103,6 +119,28 @@
 		855212B42BF3CB80003557AF /* CDCommonUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDCommonUtils.m; sourceTree = "<group>"; };
 		855212B62BF3CBCF003557AF /* UIView+Helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Helper.h"; sourceTree = "<group>"; };
 		855212B72BF3CBCF003557AF /* UIView+Helper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Helper.m"; sourceTree = "<group>"; };
+		85707F6D2C425A4900E17EBC /* CDProfileEditViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDProfileEditViewController.h; sourceTree = "<group>"; };
+		85707F6E2C425A5000E17EBC /* CDProfileEditViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDProfileEditViewController.m; sourceTree = "<group>"; };
+		85707F702C425A6800E17EBC /* CDUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDUser.h; sourceTree = "<group>"; };
+		85707F712C425A7300E17EBC /* CDUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDUser.m; sourceTree = "<group>"; };
+		85707F762C425AEA00E17EBC /* CDProfileFunctionItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDProfileFunctionItem.h; sourceTree = "<group>"; };
+		85707F772C425AF100E17EBC /* CDProfileFunctionItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDProfileFunctionItem.m; sourceTree = "<group>"; };
+		85707F792C42781000E17EBC /* CDSettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDSettingsViewController.h; sourceTree = "<group>"; };
+		85707F7A2C42781600E17EBC /* CDSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDSettingsViewController.m; sourceTree = "<group>"; };
+		85707F7C2C427C3C00E17EBC /* CDSettingsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDSettingsModel.h; sourceTree = "<group>"; };
+		85707F7D2C427C4700E17EBC /* CDSettingsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDSettingsModel.m; sourceTree = "<group>"; };
+		85707F7F2C427CA700E17EBC /* CDSettingsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDSettingsCell.h; sourceTree = "<group>"; };
+		85707F802C427CAD00E17EBC /* CDSettingsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDSettingsCell.m; sourceTree = "<group>"; };
+		85707F832C42894700E17EBC /* 1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpeg; sourceTree = "<group>"; };
+		85707F842C42894700E17EBC /* 9.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpeg; sourceTree = "<group>"; };
+		85707F852C42894700E17EBC /* 5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpeg; sourceTree = "<group>"; };
+		85707F862C42894700E17EBC /* 8.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpeg; sourceTree = "<group>"; };
+		85707F872C42894700E17EBC /* 3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpeg; sourceTree = "<group>"; };
+		85707F882C42894700E17EBC /* 4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpeg; sourceTree = "<group>"; };
+		85707F892C42894700E17EBC /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
+		85707F8A2C42894700E17EBC /* 7.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpeg; sourceTree = "<group>"; };
+		85707F8B2C42894700E17EBC /* 6.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpeg; sourceTree = "<group>"; };
+		85707F8C2C42894700E17EBC /* 2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpeg; sourceTree = "<group>"; };
 		859985EC2C3B28DA001B395A /* CDRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDRegisterViewController.h; sourceTree = "<group>"; };
 		859985ED2C3B28E0001B395A /* CDRegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDRegisterViewController.m; sourceTree = "<group>"; };
 		859FA7AE2C3B2BDF0066BDC6 /* CDNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDNavigationBar.h; sourceTree = "<group>"; };
@@ -256,6 +294,7 @@
 		855212792BF3CA0A003557AF /* ChowDown */ = {
 			isa = PBXGroup;
 			children = (
+				85707F822C42892000E17EBC /* Resource */,
 				855212B02BF3CB2D003557AF /* Modules */,
 				8552127A2BF3CA0A003557AF /* AppDelegate.h */,
 				8552127B2BF3CA0A003557AF /* AppDelegate.m */,
@@ -302,9 +341,51 @@
 		855212B12BF3CB39003557AF /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				85707F732C425A8B00E17EBC /* UI */,
 				855212B22BF3CB52003557AF /* CDCommonMacro.h */,
 				855212B32BF3CB7A003557AF /* CDCommonUtils.h */,
 				855212B42BF3CB80003557AF /* CDCommonUtils.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		85707F682C4259A600E17EBC /* Order */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		85707F692C4259AF00E17EBC /* Address */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Address;
+			sourceTree = "<group>";
+		};
+		85707F6A2C425A1200E17EBC /* Employee */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Employee;
+			sourceTree = "<group>";
+		};
+		85707F6B2C425A1D00E17EBC /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				85707F792C42781000E17EBC /* CDSettingsViewController.h */,
+				85707F7A2C42781600E17EBC /* CDSettingsViewController.m */,
+				85707F7C2C427C3C00E17EBC /* CDSettingsModel.h */,
+				85707F7D2C427C4700E17EBC /* CDSettingsModel.m */,
+				85707F7F2C427CA700E17EBC /* CDSettingsCell.h */,
+				85707F802C427CAD00E17EBC /* CDSettingsCell.m */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		85707F732C425A8B00E17EBC /* UI */ = {
+			isa = PBXGroup;
+			children = (
 				855212B62BF3CBCF003557AF /* UIView+Helper.h */,
 				855212B72BF3CBCF003557AF /* UIView+Helper.m */,
 				85E5AC472C2612E9004660EA /* UIColor+Helper.h */,
@@ -316,7 +397,33 @@
 				859FA7B42C3BD56A0066BDC6 /* CDLoadingView.h */,
 				859FA7B52C3BD5700066BDC6 /* CDLoadingView.m */,
 			);
-			path = Common;
+			path = UI;
+			sourceTree = "<group>";
+		};
+		85707F752C425AAD00E17EBC /* User */ = {
+			isa = PBXGroup;
+			children = (
+				85707F702C425A6800E17EBC /* CDUser.h */,
+				85707F712C425A7300E17EBC /* CDUser.m */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		85707F822C42892000E17EBC /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				85707F832C42894700E17EBC /* 1.jpeg */,
+				85707F8C2C42894700E17EBC /* 2.jpeg */,
+				85707F872C42894700E17EBC /* 3.jpeg */,
+				85707F882C42894700E17EBC /* 4.jpeg */,
+				85707F852C42894700E17EBC /* 5.jpeg */,
+				85707F8B2C42894700E17EBC /* 6.jpeg */,
+				85707F8A2C42894700E17EBC /* 7.jpeg */,
+				85707F862C42894700E17EBC /* 8.jpeg */,
+				85707F842C42894700E17EBC /* 9.jpeg */,
+				85707F892C42894700E17EBC /* 10.jpg */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		859985EB2C3B28C3001B395A /* Register */ = {
@@ -442,6 +549,11 @@
 		85E5AC422C260FA6004660EA /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				85707F752C425AAD00E17EBC /* User */,
+				85707F6B2C425A1D00E17EBC /* Settings */,
+				85707F6A2C425A1200E17EBC /* Employee */,
+				85707F692C4259AF00E17EBC /* Address */,
+				85707F682C4259A600E17EBC /* Order */,
 				859FA80A2C3C5ADB0066BDC6 /* Location */,
 				859FA7B82C3C38F90066BDC6 /* Shop */,
 				859FA7B72C3C38DD0066BDC6 /* Merchant */,
@@ -481,6 +593,10 @@
 				85E5AC502C262206004660EA /* CDProfileViewController.m */,
 				85E5AC592C26456C004660EA /* CDProfileFunctionCell.h */,
 				85E5AC5A2C264572004660EA /* CDProfileFunctionCell.m */,
+				85707F6D2C425A4900E17EBC /* CDProfileEditViewController.h */,
+				85707F6E2C425A5000E17EBC /* CDProfileEditViewController.m */,
+				85707F762C425AEA00E17EBC /* CDProfileFunctionItem.h */,
+				85707F772C425AF100E17EBC /* CDProfileFunctionItem.m */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -616,8 +732,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85707F8F2C42894700E17EBC /* 5.jpeg in Resources */,
 				8552128A2BF3CA0B003557AF /* LaunchScreen.storyboard in Resources */,
+				85707F902C42894700E17EBC /* 8.jpeg in Resources */,
+				85707F8D2C42894700E17EBC /* 1.jpeg in Resources */,
+				85707F932C42894700E17EBC /* 10.jpg in Resources */,
+				85707F942C42894700E17EBC /* 7.jpeg in Resources */,
+				85707F952C42894700E17EBC /* 6.jpeg in Resources */,
 				855212872BF3CA0B003557AF /* Assets.xcassets in Resources */,
+				85707F962C42894700E17EBC /* 2.jpeg in Resources */,
+				85707F912C42894700E17EBC /* 3.jpeg in Resources */,
+				85707F922C42894700E17EBC /* 4.jpeg in Resources */,
+				85707F8E2C42894700E17EBC /* 9.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -750,11 +876,13 @@
 				859FA7EA2C3C3D710066BDC6 /* CDShopDetailsHeaderView.m in Sources */,
 				85E5AC462C260FC4004660EA /* CDLoginViewController.m in Sources */,
 				859FA80D2C3C5AF30066BDC6 /* CDLocationSelectViewController.m in Sources */,
+				85707F7B2C42781600E17EBC /* CDSettingsViewController.m in Sources */,
 				859FA8102C3C6AD20066BDC6 /* CDLocationModel.m in Sources */,
 				859FA7EC2C3C3D710066BDC6 /* CDShopDetailsTableViewCell.m in Sources */,
 				85E5AC5B2C264572004660EA /* CDProfileFunctionCell.m in Sources */,
 				85E5AC492C2612E9004660EA /* UIColor+Helper.m in Sources */,
 				859FA7C42C3C3C150066BDC6 /* CDHomepageShopItem.m in Sources */,
+				85707F722C425A7300E17EBC /* CDUser.m in Sources */,
 				859FA8092C3C47E00066BDC6 /* CDMenuManagementViewController.m in Sources */,
 				85E5AC512C262206004660EA /* CDProfileViewController.m in Sources */,
 				859FA8072C3C47E00066BDC6 /* CDMerchantBaseViewController.m in Sources */,
@@ -762,6 +890,7 @@
 				859FA7E72C3C3D710066BDC6 /* CDShoppingCartViewCell.m in Sources */,
 				855212822BF3CA0A003557AF /* ViewController.m in Sources */,
 				859FA7EB2C3C3D710066BDC6 /* CDSubmitOrderHeaderView.m in Sources */,
+				85707F6F2C425A5000E17EBC /* CDProfileEditViewController.m in Sources */,
 				859FA8022C3C47E00066BDC6 /* CDMenuManagementTableViewCell.m in Sources */,
 				8552127C2BF3CA0A003557AF /* AppDelegate.m in Sources */,
 				859FA8082C3C47E00066BDC6 /* CDOrderDetailsViewController.m in Sources */,
@@ -774,8 +903,11 @@
 				855212B52BF3CB80003557AF /* CDCommonUtils.m in Sources */,
 				85E5AC582C262C29004660EA /* CDMainTabBarController.m in Sources */,
 				859FA7B32C3B2C040066BDC6 /* CDToast.m in Sources */,
+				85707F782C425AF100E17EBC /* CDProfileFunctionItem.m in Sources */,
+				85707F812C427CAD00E17EBC /* CDSettingsCell.m in Sources */,
 				859FA8042C3C47E00066BDC6 /* CDOrderModel.m in Sources */,
 				85E5AC552C262272004660EA /* CDHomepageViewController.m in Sources */,
+				85707F7E2C427C4700E17EBC /* CDSettingsModel.m in Sources */,
 				859FA8032C3C47E00066BDC6 /* CDOrderTableViewCell.m in Sources */,
 				8552128D2BF3CA0B003557AF /* main.m in Sources */,
 				8552127F2BF3CA0A003557AF /* SceneDelegate.m in Sources */,

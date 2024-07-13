@@ -12,6 +12,7 @@
 #import "CDMainViewController.h"
 #import "CDRegisterViewController.h"
 #import "CDLoadingView.h"
+#import "CDUser.h"
 #import <WXApi.h>
 
 @interface CDLoginViewController ()
@@ -80,6 +81,8 @@
     self.emailField = [[UITextField alloc] init];
     self.emailField.placeholder = @"Enter email id";
     self.emailField.borderStyle = UITextBorderStyleRoundedRect;
+    self.emailField.autocorrectionType = UITextAutocorrectionTypeNo;
+    self.emailField.autocapitalizationType = UITextAutocapitalizationTypeNone;
     [self.view addSubview:self.emailField];
     
     [self.emailField mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -123,9 +126,16 @@
         STRONG_REF(self);
         [CDLoadingView showLoading];
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 2 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+            CDUser *user = [[CDUser alloc] init];
+            user.userId = self.emailField.text;
+            user.nickname = @"Chow Down";
+            user.introduction = @"Official Assistant";
+            user.avatarUrl = @"https://media.newyorker.com/photos/5909743dc14b3c606c108588/master/pass/160229_r27717.jpg";
+            [CDUser login:user];
+            
             [CDLoadingView dismissLoading];
             CDMainViewController *mainVC = [[CDMainViewController alloc] init];
-            [self.navigationController pushViewController:mainVC animated:NO];
+            self.navigationController.viewControllers = @[mainVC];            
         });
     } forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.loginButton];

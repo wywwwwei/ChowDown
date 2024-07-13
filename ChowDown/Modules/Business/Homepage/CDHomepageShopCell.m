@@ -46,10 +46,11 @@
     }
     self.avatarView = [[UIImageView alloc] init];
     self.avatarView.contentMode = UIViewContentModeScaleAspectFill;
-    self.avatarView.layer.cornerRadius = 25.f;
+    self.avatarView.layer.cornerRadius = 8.f;
+    self.avatarView.layer.masksToBounds = YES;
     [self addSubview:self.avatarView];
     [self.avatarView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.width.height.mas_equalTo(50);
+        make.width.height.mas_equalTo(60);
         make.left.offset(20);
         make.centerY.mas_equalTo(self);
     }];

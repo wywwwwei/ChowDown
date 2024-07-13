@@ -9,10 +9,6 @@
 #import <Masonry/Masonry.h>
 #import <SDWebImage/UIImageView+WebCache.h>
 
-@implementation CDProfileFunctionItem
-
-@end
-
 @interface CDProfileFunctionCell ()
 
 @property (nonatomic, strong) UIImageView *iconView;

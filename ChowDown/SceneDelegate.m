@@ -7,6 +7,8 @@
 
 #import "SceneDelegate.h"
 #import "CDLoginViewController.h"
+#import "CDMainViewController.h"
+#import "CDUser.h"
 
 @interface SceneDelegate ()
 
@@ -24,7 +26,12 @@
     }
     UIWindowScene *windowScene = (UIWindowScene *)scene;
     self.window = [[UIWindow alloc] initWithWindowScene:windowScene];
-    UIViewController *vc = [[CDLoginViewController alloc] init];
+    UIViewController *vc = nil;
+    if ([CDUser isLogin]) {
+        vc = [[CDMainViewController alloc] init];
+    } else {
+        vc = [[CDLoginViewController alloc] init];
+    }
     UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController = navVC;
     [self.window makeKeyAndVisible];
