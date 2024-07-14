@@ -33,4 +33,10 @@
     return [self keyWindow].safeAreaInsets;
 }
 
++ (NSString *)currentTimeStr {
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    return [dateFormatter stringFromDate:[NSDate date]];
+}
+
 @end

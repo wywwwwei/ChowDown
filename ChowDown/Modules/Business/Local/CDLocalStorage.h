@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CDOrderModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -15,6 +16,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSString *)registerUserEmail:(NSString *)email password:(NSString *)password;
 - (NSString *)loginUserEmail:(NSString *)email password:(NSString *)password;
+
+- (void)addOrder:(CDBaseOrderModel *)order;
+- (NSArray<CDBaseOrderModel *> *)hitoryOrders;
 
 @end
 

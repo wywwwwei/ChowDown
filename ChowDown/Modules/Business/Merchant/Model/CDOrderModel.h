@@ -6,10 +6,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CDShopDetailsModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CDOrderModel : NSObject
+// The order info created by customer
+@interface CDBaseOrderModel : NSObject
 
 @property (nonatomic, strong) NSString *name;
 
@@ -26,7 +28,16 @@ NS_ASSUME_NONNULL_BEGIN
 // 0 未派送  1已派送  2未完成  3已完成
 @property (nonatomic, assign) int orderType;
 
-@property (nonatomic, strong) NSString * orderTypeString;
+@property (nonatomic, strong) NSString *orderTypeString;
+
+@property (nonatomic, strong) NSString *shopName;
+
+@property (nonatomic, strong) NSArray<CDShopDetailsModel *> *buyItems;
+
+@end
+
+// Add extra info for merchant based on customer order
+@interface CDOrderModel : CDBaseOrderModel
 
 @property (nonatomic, strong) NSString * psString;
 

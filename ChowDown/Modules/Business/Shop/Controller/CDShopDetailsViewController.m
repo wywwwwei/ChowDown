@@ -175,6 +175,7 @@
 
             CDSubmitOrderViewController *submitOrderViewController = [[CDSubmitOrderViewController alloc] init];
             submitOrderViewController.dataArrays = weakSelf.shoppingCartView.listArrays;
+            submitOrderViewController.shopName = @"McDonald‘s";
             submitOrderViewController.tuochPayCompletionBlock = ^{
                 [weakSelf.shoppingCartView touchClearShoppingButttonEvent];
             };

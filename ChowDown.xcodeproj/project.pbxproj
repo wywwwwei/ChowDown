@@ -37,7 +37,6 @@
 		85707F962C42894700E17EBC /* 2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 85707F8C2C42894700E17EBC /* 2.jpeg */; };
 		85707F992C4290C400E17EBC /* CDOrdersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85707F982C4290C400E17EBC /* CDOrdersViewController.m */; };
 		85707F9F2C42B15100E17EBC /* CDCustomerOrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85707F9E2C42B15100E17EBC /* CDCustomerOrderCell.m */; };
-		85707FA22C42B1AC00E17EBC /* CDCustomerOrderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85707FA12C42B1AC00E17EBC /* CDCustomerOrderModel.m */; };
 		859985EE2C3B28E0001B395A /* CDRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 859985ED2C3B28E0001B395A /* CDRegisterViewController.m */; };
 		859FA7B02C3B2BE80066BDC6 /* CDNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 859FA7AF2C3B2BE80066BDC6 /* CDNavigationBar.m */; };
 		859FA7B32C3B2C040066BDC6 /* CDToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 859FA7B22C3B2C040066BDC6 /* CDToast.m */; };
@@ -153,8 +152,6 @@
 		85707F982C4290C400E17EBC /* CDOrdersViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDOrdersViewController.m; sourceTree = "<group>"; };
 		85707F9D2C42B14B00E17EBC /* CDCustomerOrderCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDCustomerOrderCell.h; sourceTree = "<group>"; };
 		85707F9E2C42B15100E17EBC /* CDCustomerOrderCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDCustomerOrderCell.m; sourceTree = "<group>"; };
-		85707FA02C42B1A600E17EBC /* CDCustomerOrderModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDCustomerOrderModel.h; sourceTree = "<group>"; };
-		85707FA12C42B1AC00E17EBC /* CDCustomerOrderModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDCustomerOrderModel.m; sourceTree = "<group>"; };
 		859985EC2C3B28DA001B395A /* CDRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDRegisterViewController.h; sourceTree = "<group>"; };
 		859985ED2C3B28E0001B395A /* CDRegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDRegisterViewController.m; sourceTree = "<group>"; };
 		859FA7AE2C3B2BDF0066BDC6 /* CDNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDNavigationBar.h; sourceTree = "<group>"; };
@@ -382,8 +379,6 @@
 				85707F982C4290C400E17EBC /* CDOrdersViewController.m */,
 				85707F9D2C42B14B00E17EBC /* CDCustomerOrderCell.h */,
 				85707F9E2C42B15100E17EBC /* CDCustomerOrderCell.m */,
-				85707FA02C42B1A600E17EBC /* CDCustomerOrderModel.h */,
-				85707FA12C42B1AC00E17EBC /* CDCustomerOrderModel.m */,
 			);
 			path = Order;
 			sourceTree = "<group>";
@@ -952,7 +947,6 @@
 				855212B82BF3CBCF003557AF /* UIView+Helper.m in Sources */,
 				85E5AC4D2C2620B0004660EA /* CDMainViewController.m in Sources */,
 				859FA7D12C3C3D2A0066BDC6 /* CDSubmitOrderViewController.m in Sources */,
-				85707FA22C42B1AC00E17EBC /* CDCustomerOrderModel.m in Sources */,
 				859FA7D02C3C3D2A0066BDC6 /* CDShopDetailsViewController.m in Sources */,
 				855212B52BF3CB80003557AF /* CDCommonUtils.m in Sources */,
 				85E5AC582C262C29004660EA /* CDMainTabBarController.m in Sources */,

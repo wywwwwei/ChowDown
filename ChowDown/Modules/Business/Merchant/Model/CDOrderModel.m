@@ -6,8 +6,16 @@
 //
 
 #import "CDOrderModel.h"
+#import <MJExtension/NSObject+MJKeyValue.h>
 
-@implementation CDOrderModel
+@implementation CDBaseOrderModel
+
++ (NSDictionary *)mj_objectClassInArray {
+    return @{
+        @"buyItems": @"CDShopDetailsModel",
+    };
+}
+
 // 0 未派送  1已派送  2未完成  3已完成
 - (NSString *)orderTypeString {
     if (self.orderType == 0) {
@@ -24,6 +32,10 @@
     }
     return @"";
 }
+
+@end
+
+@implementation CDOrderModel
 
 - (NSString *)psString {
     if (self.orderType == 0) {

@@ -11,6 +11,7 @@
 #import "CDSubmitOrderPayView.h"
 #import "CDSubmitOrderTableViewCell.h"
 #import "CDNavigationBar.h"
+#import "CDLocalStorage.h"
 #import <Masonry/Masonry.h>
 #import <SVProgressHUD/SVProgressHUD.h>
 #import <WXApi.h>
@@ -82,6 +83,17 @@
                                                                              message:@"The current order has been paid"
                                                                       preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        CDBaseOrderModel *order = [[CDBaseOrderModel alloc] init];
+        order.buyItems = self.dataArrays;
+        order.shopName = self.shopName;
+        order.orderCode = @(floor(CACurrentMediaTime())).stringValue;
+        order.time = [CDCommonUtils currentTimeStr];
+        int allPrice = 0;
+        for (CDShopDetailsModel *model in self.dataArrays) {
+            allPrice += (model.payNumber * [model.price intValue]);
+        }
+        order.price = @(allPrice).stringValue;
+        [[CDLocalStorage sharedInstance] addOrder:order];
         self.tuochPayCompletionBlock();
         [self.navigationController popViewControllerAnimated:true];
     }];

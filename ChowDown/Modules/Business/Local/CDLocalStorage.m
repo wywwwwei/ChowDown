@@ -12,6 +12,7 @@
 
 static NSString *const CDAllUserKey = @"CDAllUserKey";
 static NSString *const CDAllUserPwdKey = @"CDAllUserPwdKey";
+static NSString *const CDOrdersPrefixKey = @"CDOrdersPrefixKey";
 
 @interface CDLocalStorage ()
 
@@ -72,6 +73,21 @@ static NSString *const CDAllUserPwdKey = @"CDAllUserPwdKey";
         }
     }
     return @"The user does not exist";
+}
+
+- (void)addOrder:(CDBaseOrderModel *)order {
+    NSString *key = [CDOrdersPrefixKey stringByAppendingFormat:@"_%@", [CDUser currentUser].userId];
+    NSArray *allOrders = [[NSUserDefaults standardUserDefaults] arrayForKey:key];
+    NSMutableArray *orders = [NSMutableArray arrayWithArray:allOrders];
+    [orders addObject:[order mj_keyValues]];
+    [[NSUserDefaults standardUserDefaults] setObject:orders forKey:key];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+- (NSArray<CDBaseOrderModel *> *)hitoryOrders {
+    NSString *key = [CDOrdersPrefixKey stringByAppendingFormat:@"_%@", [CDUser currentUser].userId];
+    NSArray *allOrders = [[NSUserDefaults standardUserDefaults] arrayForKey:key];
+    return [CDBaseOrderModel mj_objectArrayWithKeyValuesArray:allOrders];
 }
 
 @end

@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CDCustomerOrderCell : UICollectionViewCell
 
-@property (nonatomic, strong) CDOrderModel *model;
+@property (nonatomic, strong) CDBaseOrderModel *model;
 
 @end
 

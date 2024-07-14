@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface CDSubmitOrderViewController : UIViewController
 
 @property (nonatomic, strong) NSMutableArray<CDShopDetailsModel *> *dataArrays;
+@property (nonatomic, strong) NSString *shopName;
 
 @property (nonatomic,copy) void(^tuochPayCompletionBlock)(void);
 

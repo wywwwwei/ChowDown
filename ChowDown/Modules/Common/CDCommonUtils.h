@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (UIWindow *)keyWindow;
 + (UIEdgeInsets)safeAreaInsets;
++ (NSString *)currentTimeStr;
 
 @end
 
