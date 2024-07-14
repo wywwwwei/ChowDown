@@ -35,6 +35,9 @@
 		85707F942C42894700E17EBC /* 7.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 85707F8A2C42894700E17EBC /* 7.jpeg */; };
 		85707F952C42894700E17EBC /* 6.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 85707F8B2C42894700E17EBC /* 6.jpeg */; };
 		85707F962C42894700E17EBC /* 2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 85707F8C2C42894700E17EBC /* 2.jpeg */; };
+		85707F992C4290C400E17EBC /* CDOrdersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85707F982C4290C400E17EBC /* CDOrdersViewController.m */; };
+		85707F9F2C42B15100E17EBC /* CDCustomerOrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85707F9E2C42B15100E17EBC /* CDCustomerOrderCell.m */; };
+		85707FA22C42B1AC00E17EBC /* CDCustomerOrderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85707FA12C42B1AC00E17EBC /* CDCustomerOrderModel.m */; };
 		859985EE2C3B28E0001B395A /* CDRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 859985ED2C3B28E0001B395A /* CDRegisterViewController.m */; };
 		859FA7B02C3B2BE80066BDC6 /* CDNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 859FA7AF2C3B2BE80066BDC6 /* CDNavigationBar.m */; };
 		859FA7B32C3B2C040066BDC6 /* CDToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 859FA7B22C3B2C040066BDC6 /* CDToast.m */; };
@@ -70,6 +73,11 @@
 		85E5AC5B2C264572004660EA /* CDProfileFunctionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E5AC5A2C264572004660EA /* CDProfileFunctionCell.m */; };
 		85E5AC5E2C264E04004660EA /* CDHomepageShopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E5AC5D2C264E04004660EA /* CDHomepageShopCell.m */; };
 		85EE891F2BF6732200088D53 /* CDNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 85EE891E2BF6732200088D53 /* CDNetworkManager.m */; };
+		85F1B5FB2C433B72003FA32A /* CDLocalStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F1B5FA2C433B72003FA32A /* CDLocalStorage.m */; };
+		85F1B5FE2C434031003FA32A /* NSString+Secure.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F1B5FD2C434031003FA32A /* NSString+Secure.m */; };
+		85F1B6042C4343E5003FA32A /* CDEmployeeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F1B6032C4343E5003FA32A /* CDEmployeeViewController.m */; };
+		85F1B6072C434438003FA32A /* CDEmployeeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F1B6062C434438003FA32A /* CDEmployeeModel.m */; };
+		85F1B60A2C43467A003FA32A /* CDEmployeeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F1B6092C43467A003FA32A /* CDEmployeeTableViewCell.m */; };
 		E711FAEF22B34C6F037C8FDF /* Pods_ChowDownTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1615DF34F92EF7B6F2ED23C1 /* Pods_ChowDownTests.framework */; };
 		F67B08B83A1A83D9BCA91EC5 /* Pods_ChowDown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C2DA6403AF9C361C9DC8F4 /* Pods_ChowDown.framework */; };
 /* End PBXBuildFile section */
@@ -141,6 +149,12 @@
 		85707F8A2C42894700E17EBC /* 7.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpeg; sourceTree = "<group>"; };
 		85707F8B2C42894700E17EBC /* 6.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpeg; sourceTree = "<group>"; };
 		85707F8C2C42894700E17EBC /* 2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpeg; sourceTree = "<group>"; };
+		85707F972C4290B800E17EBC /* CDOrdersViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDOrdersViewController.h; sourceTree = "<group>"; };
+		85707F982C4290C400E17EBC /* CDOrdersViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDOrdersViewController.m; sourceTree = "<group>"; };
+		85707F9D2C42B14B00E17EBC /* CDCustomerOrderCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDCustomerOrderCell.h; sourceTree = "<group>"; };
+		85707F9E2C42B15100E17EBC /* CDCustomerOrderCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDCustomerOrderCell.m; sourceTree = "<group>"; };
+		85707FA02C42B1A600E17EBC /* CDCustomerOrderModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDCustomerOrderModel.h; sourceTree = "<group>"; };
+		85707FA12C42B1AC00E17EBC /* CDCustomerOrderModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDCustomerOrderModel.m; sourceTree = "<group>"; };
 		859985EC2C3B28DA001B395A /* CDRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDRegisterViewController.h; sourceTree = "<group>"; };
 		859985ED2C3B28E0001B395A /* CDRegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDRegisterViewController.m; sourceTree = "<group>"; };
 		859FA7AE2C3B2BDF0066BDC6 /* CDNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDNavigationBar.h; sourceTree = "<group>"; };
@@ -212,6 +226,16 @@
 		85EE891C2BF6730500088D53 /* CDApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDApi.h; sourceTree = "<group>"; };
 		85EE891D2BF6731200088D53 /* CDNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDNetworkManager.h; sourceTree = "<group>"; };
 		85EE891E2BF6732200088D53 /* CDNetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDNetworkManager.m; sourceTree = "<group>"; };
+		85F1B5F92C433B6C003FA32A /* CDLocalStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDLocalStorage.h; sourceTree = "<group>"; };
+		85F1B5FA2C433B72003FA32A /* CDLocalStorage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDLocalStorage.m; sourceTree = "<group>"; };
+		85F1B5FC2C434031003FA32A /* NSString+Secure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Secure.h"; sourceTree = "<group>"; };
+		85F1B5FD2C434031003FA32A /* NSString+Secure.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Secure.m"; sourceTree = "<group>"; };
+		85F1B5FF2C4343D0003FA32A /* CDEmployeeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDEmployeeViewController.h; sourceTree = "<group>"; };
+		85F1B6032C4343E5003FA32A /* CDEmployeeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDEmployeeViewController.m; sourceTree = "<group>"; };
+		85F1B6052C434431003FA32A /* CDEmployeeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDEmployeeModel.h; sourceTree = "<group>"; };
+		85F1B6062C434438003FA32A /* CDEmployeeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDEmployeeModel.m; sourceTree = "<group>"; };
+		85F1B6082C434674003FA32A /* CDEmployeeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDEmployeeTableViewCell.h; sourceTree = "<group>"; };
+		85F1B6092C43467A003FA32A /* CDEmployeeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDEmployeeTableViewCell.m; sourceTree = "<group>"; };
 		9C17DCBE62B79C1BFA0D3E3B /* Pods-ChowDownTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChowDownTests.release.xcconfig"; path = "Target Support Files/Pods-ChowDownTests/Pods-ChowDownTests.release.xcconfig"; sourceTree = "<group>"; };
 		D70FAE0BF86CE04151C2E721 /* Pods-ChowDown.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChowDown.debug.xcconfig"; path = "Target Support Files/Pods-ChowDown/Pods-ChowDown.debug.xcconfig"; sourceTree = "<group>"; };
 		D9EA5C0DAA774CB468DA5EE8 /* Pods-ChowDown-ChowDownUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChowDown-ChowDownUITests.debug.xcconfig"; path = "Target Support Files/Pods-ChowDown-ChowDownUITests/Pods-ChowDown-ChowDownUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -345,6 +369,8 @@
 				855212B22BF3CB52003557AF /* CDCommonMacro.h */,
 				855212B32BF3CB7A003557AF /* CDCommonUtils.h */,
 				855212B42BF3CB80003557AF /* CDCommonUtils.m */,
+				85F1B5FC2C434031003FA32A /* NSString+Secure.h */,
+				85F1B5FD2C434031003FA32A /* NSString+Secure.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -352,6 +378,12 @@
 		85707F682C4259A600E17EBC /* Order */ = {
 			isa = PBXGroup;
 			children = (
+				85707F972C4290B800E17EBC /* CDOrdersViewController.h */,
+				85707F982C4290C400E17EBC /* CDOrdersViewController.m */,
+				85707F9D2C42B14B00E17EBC /* CDCustomerOrderCell.h */,
+				85707F9E2C42B15100E17EBC /* CDCustomerOrderCell.m */,
+				85707FA02C42B1A600E17EBC /* CDCustomerOrderModel.h */,
+				85707FA12C42B1AC00E17EBC /* CDCustomerOrderModel.m */,
 			);
 			path = Order;
 			sourceTree = "<group>";
@@ -505,6 +537,8 @@
 				859FA7F22C3C47E00066BDC6 /* CDOrderTableViewCell.m */,
 				859FA7F32C3C47E00066BDC6 /* CDMenuManagementTableViewCell.h */,
 				859FA7F12C3C47E00066BDC6 /* CDMenuManagementTableViewCell.m */,
+				85F1B6082C434674003FA32A /* CDEmployeeTableViewCell.h */,
+				85F1B6092C43467A003FA32A /* CDEmployeeTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -516,6 +550,8 @@
 				859FA7F52C3C47E00066BDC6 /* CDOrderModel.m */,
 				859FA7F82C3C47E00066BDC6 /* CDMenuManagementModel.h */,
 				859FA7F62C3C47E00066BDC6 /* CDMenuManagementModel.m */,
+				85F1B6052C434431003FA32A /* CDEmployeeModel.h */,
+				85F1B6062C434438003FA32A /* CDEmployeeModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -531,6 +567,8 @@
 				859FA7FC2C3C47E00066BDC6 /* CDOrderDetailsViewController.m */,
 				859FA8012C3C47E00066BDC6 /* CDMenuManagementViewController.h */,
 				859FA7FD2C3C47E00066BDC6 /* CDMenuManagementViewController.m */,
+				85F1B5FF2C4343D0003FA32A /* CDEmployeeViewController.h */,
+				85F1B6032C4343E5003FA32A /* CDEmployeeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -549,6 +587,7 @@
 		85E5AC422C260FA6004660EA /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				85F1B5F82C433B60003FA32A /* Local */,
 				85707F752C425AAD00E17EBC /* User */,
 				85707F6B2C425A1D00E17EBC /* Settings */,
 				85707F6A2C425A1200E17EBC /* Employee */,
@@ -622,6 +661,15 @@
 				85EE891E2BF6732200088D53 /* CDNetworkManager.m */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		85F1B5F82C433B60003FA32A /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				85F1B5F92C433B6C003FA32A /* CDLocalStorage.h */,
+				85F1B5FA2C433B72003FA32A /* CDLocalStorage.m */,
+			);
+			path = Local;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -881,6 +929,7 @@
 				859FA7EC2C3C3D710066BDC6 /* CDShopDetailsTableViewCell.m in Sources */,
 				85E5AC5B2C264572004660EA /* CDProfileFunctionCell.m in Sources */,
 				85E5AC492C2612E9004660EA /* UIColor+Helper.m in Sources */,
+				85F1B6072C434438003FA32A /* CDEmployeeModel.m in Sources */,
 				859FA7C42C3C3C150066BDC6 /* CDHomepageShopItem.m in Sources */,
 				85707F722C425A7300E17EBC /* CDUser.m in Sources */,
 				859FA8092C3C47E00066BDC6 /* CDMenuManagementViewController.m in Sources */,
@@ -892,13 +941,18 @@
 				859FA7EB2C3C3D710066BDC6 /* CDSubmitOrderHeaderView.m in Sources */,
 				85707F6F2C425A5000E17EBC /* CDProfileEditViewController.m in Sources */,
 				859FA8022C3C47E00066BDC6 /* CDMenuManagementTableViewCell.m in Sources */,
+				85707F9F2C42B15100E17EBC /* CDCustomerOrderCell.m in Sources */,
+				85F1B5FE2C434031003FA32A /* NSString+Secure.m in Sources */,
 				8552127C2BF3CA0A003557AF /* AppDelegate.m in Sources */,
+				85F1B60A2C43467A003FA32A /* CDEmployeeTableViewCell.m in Sources */,
+				85F1B6042C4343E5003FA32A /* CDEmployeeViewController.m in Sources */,
 				859FA8082C3C47E00066BDC6 /* CDOrderDetailsViewController.m in Sources */,
 				859FA7B62C3BD5700066BDC6 /* CDLoadingView.m in Sources */,
 				859FA7E82C3C3D710066BDC6 /* CDShoppingCartView.m in Sources */,
 				855212B82BF3CBCF003557AF /* UIView+Helper.m in Sources */,
 				85E5AC4D2C2620B0004660EA /* CDMainViewController.m in Sources */,
 				859FA7D12C3C3D2A0066BDC6 /* CDSubmitOrderViewController.m in Sources */,
+				85707FA22C42B1AC00E17EBC /* CDCustomerOrderModel.m in Sources */,
 				859FA7D02C3C3D2A0066BDC6 /* CDShopDetailsViewController.m in Sources */,
 				855212B52BF3CB80003557AF /* CDCommonUtils.m in Sources */,
 				85E5AC582C262C29004660EA /* CDMainTabBarController.m in Sources */,
@@ -911,9 +965,11 @@
 				859FA8032C3C47E00066BDC6 /* CDOrderTableViewCell.m in Sources */,
 				8552128D2BF3CA0B003557AF /* main.m in Sources */,
 				8552127F2BF3CA0A003557AF /* SceneDelegate.m in Sources */,
+				85707F992C4290C400E17EBC /* CDOrdersViewController.m in Sources */,
 				859FA7EE2C3C3D710066BDC6 /* CDSubmitOrderFooterView.m in Sources */,
 				85E5AC5E2C264E04004660EA /* CDHomepageShopCell.m in Sources */,
 				859FA8062C3C47E00066BDC6 /* CDOrderViewController.m in Sources */,
+				85F1B5FB2C433B72003FA32A /* CDLocalStorage.m in Sources */,
 				859FA7B02C3B2BE80066BDC6 /* CDNavigationBar.m in Sources */,
 				859FA7D52C3C3D3C0066BDC6 /* CDShopDetailsModel.m in Sources */,
 				859FA8052C3C47E00066BDC6 /* CDMenuManagementModel.m in Sources */,

@@ -11,6 +11,8 @@
 #import <BlocksKit/UIGestureRecognizer+BlocksKit.h>
 #import "CDMainViewController.h"
 #import "CDRegisterViewController.h"
+#import "CDLocalStorage.h"
+#import "CDToast.h"
 #import "CDLoadingView.h"
 #import "CDUser.h"
 #import <WXApi.h>
@@ -125,17 +127,15 @@
     [self.loginButton bk_addEventHandler:^(id sender) {
         STRONG_REF(self);
         [CDLoadingView showLoading];
+        NSString *errorMsg = [[CDLocalStorage sharedInstance] loginUserEmail:self.emailField.text password:self.passwordField.text];
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 2 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
-            CDUser *user = [[CDUser alloc] init];
-            user.userId = self.emailField.text;
-            user.nickname = @"Chow Down";
-            user.introduction = @"Official Assistant";
-            user.avatarUrl = @"https://media.newyorker.com/photos/5909743dc14b3c606c108588/master/pass/160229_r27717.jpg";
-            [CDUser login:user];
-            
             [CDLoadingView dismissLoading];
-            CDMainViewController *mainVC = [[CDMainViewController alloc] init];
-            self.navigationController.viewControllers = @[mainVC];            
+            if (errorMsg.length > 0) {
+                [CDToast showToastTitle:errorMsg duration:3];
+            } else {
+                CDMainViewController *mainVC = [[CDMainViewController alloc] init];
+                self.navigationController.viewControllers = @[mainVC];
+            }
         });
     } forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.loginButton];

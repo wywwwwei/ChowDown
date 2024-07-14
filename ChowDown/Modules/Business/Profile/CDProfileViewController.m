@@ -11,6 +11,7 @@
 #import "CDLocationSelectViewController.h"
 #import "CDProfileEditViewController.h"
 #import "CDSettingsViewController.h"
+#import "CDOrdersViewController.h"
 #import "CDUser.h"
 #import <Masonry/Masonry.h>
 #import <SDWebImage/UIImageView+WebCache.h>
@@ -70,6 +71,11 @@
     CDProfileFunctionItem *orderItem = [[CDProfileFunctionItem alloc] init];
     orderItem.iconName = @"orders";
     orderItem.functionTitle = @"Orders";
+    orderItem.clickHandler = ^{
+        STRONG_REF(self);
+        CDOrdersViewController *vc = [[CDOrdersViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    };
     [items addObject:orderItem];
 
     CDProfileFunctionItem *merchantItem = [[CDProfileFunctionItem alloc] init];

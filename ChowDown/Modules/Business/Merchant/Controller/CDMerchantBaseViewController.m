@@ -11,6 +11,7 @@
 #import <Masonry/Masonry.h>
 #import "CDOrderViewController.h"
 #import "CDMenuManagementViewController.h"
+#import "CDEmployeeViewController.h"
 
 @interface CDMerchantBaseViewController ()
 <YNPageViewControllerDataSource,
@@ -24,6 +25,8 @@ YNPageScrollMenuViewDelegate>
 @property (nonatomic, strong) CDOrderViewController *orderViewController;
 
 @property (nonatomic, strong) CDMenuManagementViewController *menuViewController;
+
+@property (nonatomic, strong) CDEmployeeViewController *employeeViewController;
 
 @end
 
@@ -72,13 +75,15 @@ YNPageScrollMenuViewDelegate>
 - (UIScrollView *)pageViewController:(YNPageViewController *)pageViewController pageForIndex:(NSInteger)index {
     if (index == 0) {
         return self.orderViewController.tableView;
+    } else if (index == 1) {
+        return self.menuViewController.tableView;
     }
-    return self.menuViewController.tableView;
+    return self.employeeViewController.tableView;
 }
 
 - (NSString *)pageViewController:(YNPageViewController *)pageViewController
           customCacheKeyForIndex:(NSInteger )index {
-    NSArray *arrays = @[@"Order management",@"Menu management"];
+    NSArray *arrays = @[@"Order management",@"Menu management",@"Employee management"];
     return arrays[index];
 }
 
@@ -95,8 +100,10 @@ YNPageScrollMenuViewDelegate>
     NSMutableArray * arrays = [NSMutableArray new];
     self.orderViewController = [[CDOrderViewController alloc] init];
     self.menuViewController = [[CDMenuManagementViewController alloc] init];
+    self.employeeViewController = [[CDEmployeeViewController alloc] init];
     [arrays addObject:self.orderViewController];
     [arrays addObject:self.menuViewController];
+    [arrays addObject:self.employeeViewController];
     return arrays;
 }
 
@@ -126,7 +133,7 @@ YNPageScrollMenuViewDelegate>
         configration.menuHeight = 44;
         configration.lineColor = THEME_COLOR;
         _pageViewController = [YNPageViewController pageViewControllerWithControllers:self.getVCArrays
-                                                                               titles:@[@"Order management",@"Menu management"]
+                                                                               titles:@[@"Order management",@"Menu management",@"Employee management"]
                                                                                config:configration];
         _pageViewController.dataSource = self;
         _pageViewController.delegate = self;

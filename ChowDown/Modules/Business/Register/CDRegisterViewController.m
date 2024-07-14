@@ -7,6 +7,9 @@
 
 #import "CDRegisterViewController.h"
 #import "CDNavigationBar.h"
+#import "CDLoadingView.h"
+#import "CDLocalStorage.h"
+#import "CDToast.h"
 #import <Masonry/Masonry.h>
 #import <BlocksKit/UIControl+BlocksKit.h>
 #import <BlocksKit/UIGestureRecognizer+BlocksKit.h>
@@ -150,7 +153,20 @@
     WEAK_REF(self);
     [self.registerButton bk_addEventHandler:^(id sender) {
         STRONG_REF(self);
-        [self.navigationController popViewControllerAnimated:YES];
+        if (![self.passwordField.text isEqualToString:self.confirmPasswordField.text]) {
+            [CDToast showToastTitle:@"The two passwords are inconsistent" duration:3];
+            return;
+        }
+        NSString *errorMsg = [[CDLocalStorage sharedInstance] registerUserEmail:self.emailField.text password:self.passwordField.text];
+        [CDLoadingView showLoading];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 2 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+            [CDLoadingView dismissLoading];
+            if (errorMsg.length > 0) {
+                [CDToast showToastTitle:errorMsg duration:3];
+            } else {
+                [self.navigationController popViewControllerAnimated:YES];
+            }
+        });
     } forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.registerButton];
     
